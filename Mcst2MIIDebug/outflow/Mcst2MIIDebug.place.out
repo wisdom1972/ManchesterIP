@@ -1,0 +1,269 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Compiled: Jan 16 2020.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F256" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "C:/Efinity/2019.3/project/Mcst2MIIDebug/Mcst2MIIDebug.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 2.32168 seconds.
+	VDB Netlist Checker took 2.321 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 32.108 MB, end = 32.188 MB, delta = 0.08 MB
+	VDB Netlist Checker peak virtual memory usage = 73.72 MB
+VDB Netlist Checker resident set memory usage: begin = 38.284 MB, end = 38.568 MB, delta = 0.284 MB
+	VDB Netlist Checker peak resident set memory usage = 55.664 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv".
+Creating interface clock pin Clk50MIn.
+Creating interface clock buffer Clk50MIn~CLKBUF.
+Creating interface clock pin DPllRefClk.
+Creating interface clock buffer DPllRefClk~CLKBUF.
+Creating interface clock pin LvdsTxClk.
+Creating interface clock buffer LvdsTxClk~CLKBUF.
+Creating interface clock pin RxMcstSClk.
+Creating interface clock buffer RxMcstSClk~CLKBUF.
+Creating interface clock pin TxMcstSClk.
+Creating interface clock buffer TxMcstSClk~CLKBUF.
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #1(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #3(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #8(jtag_inst1_TMS) has no fanout.
+Removing input.
+logical_block #14(PllLocked[2]) has no fanout.
+Removing input.
+Pass 0: Swept away 4 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 4 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 4 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/Efinity/2019.3/project/Mcst2MIIDebug/Mcst2MIIDebug.vdb".
+Netlist pre-processing took 2.57431 seconds.
+	Netlist pre-processing took 2.575 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 10.232 MB, end = 41.396 MB, delta = 31.164 MB
+	Netlist pre-processing peak virtual memory usage = 73.72 MB
+Netlist pre-processing resident set memory usage: begin = 16.768 MB, end = 47.896 MB, delta = 31.128 MB
+	Netlist pre-processing peak resident set memory usage = 55.664 MB
+***** Ending stage netlist pre-processing *****
+***** Beginning stage packing ... *****
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+Generate proto netlist for file "C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.net_proto" took 0.067 seconds
+Creating IO constraints file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.io_place'
+Packing took 2.17481 seconds.
+	Packing took 2.175 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 20.344 MB, end = 29.06 MB, delta = 8.716 MB
+	Packing peak virtual memory usage = 92.228 MB
+Packing resident set memory usage: begin = 27.416 MB, end = 35.04 MB, delta = 7.624 MB
+	Packing peak resident set memory usage = 97.428 MB
+***** Ending stage packing *****
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.net_proto
+Read proto netlist for file "C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.net_proto" took 0.003 seconds
+Setup net and block data structure took 0.176 seconds
+Packed netlist loading took 0.201092 seconds.
+	Packed netlist loading took 0.201 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 25.46 MB, end = 83.832 MB, delta = 58.372 MB
+	Packed netlist loading peak virtual memory usage = 122.976 MB
+Packed netlist loading resident set memory usage: begin = 32.556 MB, end = 87.308 MB, delta = 54.752 MB
+	Packed netlist loading peak resident set memory usage = 126.36 MB
+***** Ending stage packed netlist loading *****
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+WARNING(1): [SDC line 3] Clock name or regular expression (TxSysClk) does not correspond to any nets.
+If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
+Unable to create clock due to warning found
+WARNING(2): [SDC line 6] Clock name or regular expression (RxNrzClk) does not correspond to any nets.
+If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
+Unable to create clock due to warning found
+WARNING(3): [SDC line 7] Clock name or regular expression (DebugClk) does not correspond to any nets.
+If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
+Unable to create clock due to warning found
+
+SDC file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/TimingConstraint.SDC' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+WARNING(4): There are 1479 pins with no clock driven by root clock: jtag_inst1_TCK
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv".
+Writing IO placement constraints to 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow\Mcst2MIIDebug.interface.io'.
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow\Mcst2MIIDebug.interface.io'.
+WARNING(5): [Line 13] Block jtag_inst1_DRCK invalid, no such block.
+WARNING(6): [Line 15] Block jtag_inst1_TMS invalid, no such block.
+WARNING(7): [Line 18] Block jtag_inst1_RUNTEST invalid, no such block.
+WARNING(8): [Line 25] Block TxMcstClkA invalid, no such block.
+WARNING(9): [Line 26] Block TxMcstSClkA invalid, no such block.
+WARNING(10): [Line 27] Block TxSysClkA invalid, no such block.
+WARNING(11): [Line 38] Block DPllLvdsClk[0] invalid, no such block.
+WARNING(12): [Line 39] Block DPllLvdsClk[1] invalid, no such block.
+WARNING(13): [Line 40] Block DPllLvdsClk[2] invalid, no such block.
+WARNING(14): [Line 41] Block DPllLvdsClk[3] invalid, no such block.
+WARNING(15): [Line 42] Block DPllLvdsClk[4] invalid, no such block.
+WARNING(16): [Line 43] Block DPllLvdsClk[5] invalid, no such block.
+WARNING(17): [Line 44] Block DPllLvdsClk[6] invalid, no such block.
+WARNING(18): [Line 45] Block DPllLvdsClk[7] invalid, no such block.
+WARNING(19): [Line 54] Block PllLocked[2] invalid, no such block.
+WARNING(20): [Line 61] Block TxSysClk invalid, no such block.
+WARNING(21): [Line 63] Block RxTestClk invalid, no such block.
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.io_place'.
+WARNING(22): Clock input pad, jtag_inst1_TCK, is placed at a GPIO location. Expect extra clock skew
+WARNING(23): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
+***** Ending stage initial placement *****
+***** Beginning stage placement ... *****
+memory map at hier_level memory(0)/mem_blk(0)
+mult map at hier_level mult(0)/mult_blk(0)
+Starting Global Placer ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps) Convergence
+ ----------     -------  --------------     -------
+          1     4167958            7687         3.4%
+          2     4298277            7138         4.5%
+          3     3921988            7422         5.6%
+          4     3523064            7499         7.1%
+          5     1989817            6411        14.1%
+          6     1119035            5258        25.9%
+          7      691905            5367        35.1%
+          8      382473            4860        37.1%
+          9      269665            4533        41.0%
+         10      209751            4512        41.6%
+         11      165444            4778        41.6%
+         12      147817            4930        44.7%
+         13      144574            5144        47.1%
+         14      137061            5478        48.0%
+         15      137354            3739        50.7%
+         16      137998            5103        51.0%
+         17      132886            4871        51.0%
+         18      129634            4434        52.6%
+         19      123899            4434        52.7%
+         20      118453            3719        53.7%
+         21      119029            5404        55.9%
+         22      114615            4961        57.7%
+         23      114163            5025        58.6%
+         24      111797            5248        58.6%
+         25      108398            5018        60.2%
+         26      105798            4958        62.2%
+         27      104086            5075        63.3%
+         28      103203            5161        64.4%
+         29      104345            5407        64.8%
+         30      101723            4659        67.5%
+         31      101261            5516        67.7%
+         32      100789            3741        68.8%
+         33       99424            4889        70.6%
+         34       98729            3903        71.5%
+         35       98778            3721        71.5%
+         36       98357            3684        72.3%
+         37       98365            3541        73.3%
+         38       97806            4485        74.6%
+         39       97783            4490        75.2%
+         40       97617            4064        76.1%
+         41       97248            4386        76.9%
+         42       98245            4949        76.9%
+         43       99065            4363        77.5%
+         44       99529            4441        78.4%
+         45       98880            4135        80.0%
+         46       98906            3518        80.5%
+         47       98314            4256        80.7%
+         48       98182            4575        82.1%
+         49       98055            4102        82.6%
+         50       98655            4102        82.8%
+         51       97887            3964        84.4%
+         52       99014            4201        84.4%
+         53       99312            4535        86.0%
+         54       98279            3917        86.5%
+         55       98909            3993        87.5%
+         56       98430            4086        87.8%
+         57       98865            3917        88.6%
+         58       98637            4032        89.6%
+Starting Legalization ... 
+Starting Annealer
+The design has 9 global clocks. Will observe clock regions
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0       99000            6018        30.0
+          1       81939            6528        30.0
+          2       65501            6378        29.3
+          3       60237            6062        29.0
+          4       56968            6062        29.0
+          5       53679            6062        29.1
+          6       51660            5927        28.9
+          7       49624            5927        28.9
+          8       47840            5927        28.5
+          9       46746            5927        28.3
+         10       45833            6032        27.8
+         11       45268            6252        27.3
+         12       44440            6433        26.7
+         13       43434            5666        26.1
+         14       42410            5666        25.3
+         15       41758            5666        24.7
+         16       40514            5666        23.8
+         17       39954            5741        23.1
+         18       39112            5741        22.2
+         19       38485            5741        21.4
+         20       38146            6209        20.5
+         21       37250            6128        19.7
+         22       36660            6128        18.8
+         23       36150            5839        18.1
+         24       35955            5839        17.3
+         25       35052            5839        16.6
+         26       34943            5887        15.8
+         27       34298            5961        15.1
+         28       33917            5819        14.5
+         29       33449            5533        13.8
+         30       32890            5440        13.2
+         31       32525            5440        12.6
+         32       32268            5440        12.0
+         33       31845            5487        11.4
+         34       31790            5629        10.9
+         35       31543            5629        10.4
+         36       31474            5578         9.9
+         37       31168            5578         9.4
+         38       31046            5371         9.0
+         39       31078            5578         8.6
+         40       30889            6202         8.1
+         41       30556            5467         7.7
+         42       30578            5573         7.2
+         43       30167            5623         6.9
+         44       30079            5410         6.6
+         45       29968            5374         6.2
+         46       29803            5419         5.9
+         47       29414            5346         5.5
+Placement successful: 4340 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.143146 at 66,58
+Congestion-weighted HPWL per net: 5.67636
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.qplace'.
+Finish Realign Types (588 blocks need type change)
+WARNING(24): There are 1479 pins with no clock driven by root clock: jtag_inst1_TCK
+
+Completed placement consistency check successfully.
+
+Placement estimated critical path delay: 2.55342 ns
+Successfully created FPGA place file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.place'
+Placement took 18.1751 seconds.
+	Placement took 18.175 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 85.684 MB, end = 131.356 MB, delta = 45.672 MB
+	Placement peak virtual memory usage = 260.344 MB
+Placement resident set memory usage: begin = 89.632 MB, end = 134.308 MB, delta = 44.676 MB
+	Placement peak resident set memory usage = 259.788 MB
+***** Ending stage placement *****
