@@ -1,0 +1,1234 @@
+
+Efinix Static Timing Analysis Report
+Version: 2019.3.272.1.6 
+Date: Sat Feb 01 21:49:16 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Top-level Entity Name: Mcst2MIIDebug
+
+SDC Filename: C:/Efinity/2019.3/project/Mcst2MIIDebug/TimingConstraint.SDC
+
+Timing Model: C4
+	temperature : 0C to 85C
+	voltage : 1.2V +/-50mV
+	speedgrade : 4
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary 
+   2. Clock Relationship Summary 
+   3. Path Details for Max Critical Paths 
+   4. Path Details for Min Critical Paths 
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+Clock Name      Period (ns)   Frequency (MHz)   Waveform   Source Clock Name
+SysClk              5.000         200.000         {0.000 2.500}        SysClk
+TxMcstClk           2.500         400.000         {0.000 1.250}        TxMcstClk
+RxMcstClk           2.500         400.000         {0.000 1.250}        RxMcstClk
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+SysClk              6.202         161.250     (R-R)
+TxMcstClk           3.314         301.720     (R-R)
+RxMcstClk           6.152         162.552     (R-R)
+
+Geomean max period: 5.019
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+SysClk           SysClk                5.000        -1.202     (R-R)
+SysClk           TxMcstClk             2.500         0.014     (R-R)
+SysClk           RxMcstClk             2.500         0.150     (R-R)
+TxMcstClk        SysClk                2.500         1.177     (R-R)
+TxMcstClk        TxMcstClk             2.500        -0.814     (R-R)
+TxMcstClk        RxMcstClk             2.500         0.718     (R-R)
+RxMcstClk        SysClk                2.500        -0.066     (R-R)
+RxMcstClk        RxMcstClk             2.500        -3.652     (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (RxMcstClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[3]~FF|CLK
+Path End      : edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[5]~FF|CE
+Launch Clock  : RxMcstClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : -3.652  (required time - arrival time)
+Delay         : 5.575
+
+Logic Level : 5
+Non-global nets on path : 6
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 6.032
+--------------------------------------------
+End-of-path arrival time       : 10.142
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================
+ RxMcstClk                                                                     inpad               0                      0           2          (160,123)
+ RxMcstClk                                                                     inpad             0.2                    0.2           2          (160,123)
+ RxMcstClk                                                                     io                  0                    0.2           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                                         gbuf_block       0.32                   0.52           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                                             gbuf             3.59                   4.11           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                                             gbuf                0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                                        gbuf_block          0                   4.11         410          (159,123)
+ edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[3]~FF|CLK    ff                  0                   4.11         410          (81,79)
+
+Data Path
+pin name                                                                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================================================================
+ edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[3]~FF|Q        ff               0.282                  0.282          17          (81,79)
+ edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[3]~FF|O_seq    eft              1.496                  1.778          17          (81,79)
+   Routing elements:  
+     Manhattan distance of X:0, Y:7
+ LUT__11565|I[2]                                                                 eft              0.161                  1.938          17          (81,72)
+ LUT__11565|in[2]                                                                lut                  0                  1.939          17          (81,72)
+ LUT__11565|out                                                                  lut                  0                  1.939           2          (81,72)
+ LUT__11565|O                                                                    eft              0.373                  2.312           2          (81,72)
+   Routing elements:  
+     Manhattan distance of X:0, Y:2
+ LUT__11567|I[3]                                                                 eft              0.116                  2.428           2          (81,74)
+ LUT__11567|in[3]                                                                lut                  0                  2.428           2          (81,74)
+ LUT__11567|out                                                                  lut                  0                  2.428           2          (81,74)
+ LUT__11567|O                                                                    eft               0.37                  2.798           2          (81,74)
+   Routing elements:  
+     Manhattan distance of X:0, Y:13
+ LUT__11570|I[1]                                                                 eft              0.223                  3.021           2          (81,61)
+ LUT__11570|in[1]                                                                lut                  0                  3.022           2          (81,61)
+ LUT__11570|out                                                                  lut                  0                  3.022           3          (81,61)
+ LUT__11570|O                                                                    eft              0.337                  3.358           3          (81,61)
+   Routing elements:  
+     Manhattan distance of X:0, Y:3
+ LUT__11571|I[0]                                                                 eft              0.267                  3.625           3          (81,58)
+ LUT__11571|in[0]                                                                lut                  0                  3.625           3          (81,58)
+ LUT__11571|out                                                                  lut                  0                  3.625           4          (81,58)
+ LUT__11571|O                                                                    eft              0.431                  4.056           4          (81,58)
+   Routing elements:  
+     Manhattan distance of X:5, Y:0
+ LUT__11628|I[2]                                                                 efl              0.147                  4.204           4          (86,58)
+ LUT__11628|in[2]                                                                lut                  0                  4.204           4          (86,58)
+ LUT__11628|out                                                                  lut                  0                  4.204          28          (86,58)
+ LUT__11628|O                                                                    efl              1.653                  5.857          28          (86,58)
+ edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[5]~FF|CE       ff               0.175                  6.032          28          (81,81)
+
+Capture Clock Path
+pin name                                                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================
+ RxMcstClk                                                                     inpad               0                      0           2          (160,123)
+ RxMcstClk                                                                     inpad             0.2                    0.2           2          (160,123)
+ RxMcstClk                                                                     io                  0                    0.2           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                                         gbuf_block       0.32                   0.52           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                                             gbuf             3.59                   4.11           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                                             gbuf                0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                                        gbuf_block          0                   4.11         410          (159,123)
+ edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/wr_pointer[5]~FF|CLK    ff                  0                   4.11         410          (81,81)
+
+######################################################################
+Path Detail Report (SysClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[10]~FF|CLK
+Path End      : U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[6]~FF|CE
+Launch Clock  : SysClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : -1.202  (required time - arrival time)
+Delay         : 5.625
+
+Logic Level : 4
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 6.082
+--------------------------------------------
+End-of-path arrival time       : 10.192
+
+Constraint                     : 5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 8.99
+
+
+Launch Clock Path
+pin name                                       model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==========================================================================================================================
+ SysClk                                         inpad               0                      0           2          (0,118)
+ SysClk                                         inpad             0.2                    0.2           2          (0,118)
+ SysClk                                         io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in          gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I              gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O              gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout         gbuf_block          0                   4.11         437          (1,118)
+ U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[10]~FF|CLK    ff                  0                   4.11         437          (97,59)
+
+Data Path
+pin name                                                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================================================
+ U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[10]~FF|Q                  ff               0.282                  0.282           3          (97,59)
+ U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[10]~FF|O_seq              eft              0.805                  1.087           3          (97,59)
+   Routing elements:  
+     Manhattan distance of X:2, Y:0
+ LUT__9817|I[0]                                             eft              0.267                  1.354           3          (99,59)
+ LUT__9817|in[0]                                            lut                  0                  1.354           3          (99,59)
+ LUT__9817|out                                              lut                  0                  1.354           2          (99,59)
+ LUT__9817|O                                                eft              0.783                  2.137           2          (99,59)
+   Routing elements:  
+     Manhattan distance of X:2, Y:1
+ LUT__9819|I[1]                                             eft              0.223                   2.36           2          (97,60)
+ LUT__9819|in[1]                                            lut                  0                   2.36           2          (97,60)
+ LUT__9819|out                                              lut                  0                   2.36           2          (97,60)
+ LUT__9819|O                                                eft              0.919                  3.279           2          (97,60)
+   Routing elements:  
+     Manhattan distance of X:8, Y:9
+ U0_PRBS9Chk/U0_PRBS9Chk/U0_PRBS9Chk/RxRight[0]~FF|I[3]     eft              0.116                  3.395           2          (105,69)
+ LUT__9823|in[3]                                            lut                  0                  3.396           2          (105,69)
+ LUT__9823|out                                              lut                  0                  3.396           3          (105,69)
+ U0_PRBS9Chk/U0_PRBS9Chk/U0_PRBS9Chk/RxRight[0]~FF|O        eft              0.793                  4.188           2          (105,69)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ LUT__9824|I[2]                                             efl              0.147                  4.336           3          (106,70)
+ LUT__9824|in[2]                                            lut                  0                  4.336           3          (106,70)
+ LUT__9824|out                                              lut                  0                  4.336          28          (106,70)
+ LUT__9824|O                                                efl              1.571                  5.907          28          (106,70)
+ U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[6]~FF|CE                  ff               0.175                  6.082          28          (99,56)
+
+Capture Clock Path
+pin name                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================
+ SysClk                                        inpad               0                      0           2          (0,118)
+ SysClk                                        inpad             0.2                    0.2           2          (0,118)
+ SysClk                                        io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in         gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I             gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O             gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout        gbuf_block          0                   4.11         437          (1,118)
+ U0_PRBS9Chk/U0_PRBS9Chk/RightCnt[6]~FF|CLK    ff                  0                   4.11         437          (99,56)
+
+######################################################################
+Path Detail Report (SysClk vs TxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[6]~FF|CLK
+Path End      : U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[1]~FF|D
+Launch Clock  : SysClk (RISE)
+Capture Clock : TxMcstClk (RISE)
+Slack         : 0.014  (required time - arrival time)
+Delay         : 1.967
+
+Logic Level : 2
+Non-global nets on path : 2
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 2.366
+--------------------------------------------
+End-of-path arrival time       : 6.476
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================
+ SysClk                                                    inpad               0                      0           2          (0,118)
+ SysClk                                                    inpad             0.2                    0.2           2          (0,118)
+ SysClk                                                    io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in                     gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I                         gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O                         gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout                    gbuf_block          0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[6]~FF|CLK    ff                  0                   4.11         437          (79,3)
+
+Data Path
+pin name                                                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================================================
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[6]~FF|Q            ff               0.282                  0.282           2          (79,3)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[6]~FF|O_seq        eft              0.776                  1.057           2          (79,3)
+   Routing elements:  
+     Manhattan distance of X:1, Y:4
+ U2_Mcst2MII/U1_McstTx/LUT__274|I[2]                             efl              0.147                  1.205           2          (80,7)
+ U2_Mcst2MII/U1_McstTx/LUT__274|in[2]                            lut                  0                  1.205           2          (80,7)
+ U2_Mcst2MII/U1_McstTx/LUT__274|out                              lut                  0                  1.205           2          (80,7)
+ U2_Mcst2MII/U1_McstTx/LUT__274|O                                efl              0.777                  1.982           2          (80,7)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[1]~FF|I[0]     eft              0.267                  2.248           2          (79,8)
+ U2_Mcst2MII/U1_McstTx/LUT__275|in[0]                            lut                  0                  2.249           2          (79,8)
+ U2_Mcst2MII/U1_McstTx/LUT__275|out                              lut                  0                  2.249           2          (79,8)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[1]~FF|D        ff               0.118                  2.366           2          (79,8)
+
+Capture Clock Path
+pin name                                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================
+ TxMcstClk                                                     inpad               0                      0           2          (160,118)
+ TxMcstClk                                                     inpad             0.2                    0.2           2          (160,118)
+ TxMcstClk                                                     io                  0                    0.2           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                         gbuf_block       0.32                   0.52           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                             gbuf             3.59                   4.11           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                             gbuf                0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                        gbuf_block          0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[1]~FF|CLK    ff                  0                   4.11          51          (79,8)
+
+######################################################################
+Path Detail Report (SysClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|CLK
+Path End      : edb_top_inst/Mcst2MII/dffrs_309/edb_top_inst/Mcst2MII/cap_fifo_din[9]~FF|D
+Launch Clock  : SysClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : 0.15  (required time - arrival time)
+Delay         : 1.831
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 2.23
+--------------------------------------------
+End-of-path arrival time       : 6.34
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                         model name    delay (ns)   cumulative delay (ns)    pins on net   location
+============================================================================================================================================
+ SysClk                                                           inpad               0                      0           2          (0,118)
+ SysClk                                                           inpad             0.2                    0.2           2          (0,118)
+ SysClk                                                           io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in                            gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I                                gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O                                gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout                           gbuf_block          0                   4.11         437          (1,118)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|CLK    ff                  0                   4.11         437          (125,35)
+
+Data Path
+pin name                                                                          model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=============================================================================================================================================================
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|Q                       ff               0.282                  0.282           5          (125,35)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|O_seq                   eft              1.607                  1.889           5          (125,35)
+   Routing elements:  
+     Manhattan distance of X:22, Y:7
+ edb_top_inst/Mcst2MII/dffrs_309/edb_top_inst/Mcst2MII/cap_fifo_din[9]~FF|I[1]     eft              0.223                  2.112           5          (103,42)
+ edb_top_inst/Mcst2MII/dffrs_309/edb_top_inst/Mcst2MII/cap_fifo_din[9]~FF|in[1]    lut4                 0                  2.112           5          (103,42)
+ edb_top_inst/Mcst2MII/dffrs_309/edb_top_inst/Mcst2MII/cap_fifo_din[9]~FF|D        ff               0.118                   2.23           5          (103,42)
+
+Capture Clock Path
+pin name                                                                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================================================================
+ RxMcstClk                                                                       inpad               0                      0           2          (160,123)
+ RxMcstClk                                                                       inpad             0.2                    0.2           2          (160,123)
+ RxMcstClk                                                                       io                  0                    0.2           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                                           gbuf_block       0.32                   0.52           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                                               gbuf             3.59                   4.11           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                                               gbuf                0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                                          gbuf_block          0                   4.11         410          (159,123)
+ edb_top_inst/Mcst2MII/dffrs_309/edb_top_inst/Mcst2MII/cap_fifo_din[9]~FF|CLK    ff                  0                   4.11         410          (103,42)
+
+######################################################################
+Path Detail Report (TxMcstClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/TxByteGen[2]~FF|CLK
+Path End      : U2_Mcst2MII/TxByteClkReg[0]~FF|D
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : 1.177  (required time - arrival time)
+Delay         : 0.804
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 1.203
+--------------------------------------------
+End-of-path arrival time       : 5.313
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ TxMcstClk                                 inpad               0                      0           2          (160,118)
+ TxMcstClk                                 inpad             0.2                    0.2           2          (160,118)
+ TxMcstClk                                 io                  0                    0.2           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in     gbuf_block       0.32                   0.52           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I         gbuf             3.59                   4.11           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O         gbuf                0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout    gbuf_block          0                   4.11          51          (159,118)
+ U2_Mcst2MII/TxByteGen[2]~FF|CLK           ff                  0                   4.11          51          (151,94)
+
+Data Path
+pin name                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================
+ U2_Mcst2MII/TxByteGen[2]~FF|Q           ff               0.282                  0.282           3          (151,94)
+ U2_Mcst2MII/TxByteGen[2]~FF|O_seq       eft              0.537                  0.818           3          (151,94)
+   Routing elements:  
+     Manhattan distance of X:6, Y:0
+ U2_Mcst2MII/TxByteClkReg[0]~FF|I[0]     eft              0.267                  1.085           3          (145,94)
+ U2_Mcst2MII/TxByteClkReg[0]~FF|in[0]    lut4                 0                  1.085           3          (145,94)
+ U2_Mcst2MII/TxByteClkReg[0]~FF|D        ff               0.118                  1.203           3          (145,94)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ SysClk                                    inpad               0                      0           2          (0,118)
+ SysClk                                    inpad             0.2                    0.2           2          (0,118)
+ SysClk                                    io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in     gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I         gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O         gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout    gbuf_block          0                   4.11         437          (1,118)
+ U2_Mcst2MII/TxByteClkReg[0]~FF|CLK        ff                  0                   4.11         437          (145,94)
+
+######################################################################
+Path Detail Report (TxMcstClk vs TxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U1_McstTx/U1_TxFifo/InMiiDataEnReg[1]~FF|CLK
+Path End      : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoRdAddrCnt[1]~FF|CE
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : TxMcstClk (RISE)
+Slack         : -0.814  (required time - arrival time)
+Delay         : 2.738
+
+Logic Level : 2
+Non-global nets on path : 3
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 3.194
+--------------------------------------------
+End-of-path arrival time       : 7.304
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=======================================================================================================================================
+ TxMcstClk                                                   inpad               0                      0           2          (160,118)
+ TxMcstClk                                                   inpad             0.2                    0.2           2          (160,118)
+ TxMcstClk                                                   io                  0                    0.2           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                       gbuf_block       0.32                   0.52           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                           gbuf             3.59                   4.11           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                           gbuf                0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                      gbuf_block          0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/InMiiDataEnReg[1]~FF|CLK    ff                  0                   4.11          51          (77,2)
+
+Data Path
+pin name                                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/InMiiDataEnReg[1]~FF|Q        ff               0.282                  0.282           2          (77,2)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/InMiiDataEnReg[1]~FF|O_seq    eft              0.771                  1.053           2          (77,2)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ U2_Mcst2MII/U1_McstTx/LUT__209|I[1]                           efl              0.222                  1.275           2          (78,3)
+ U2_Mcst2MII/U1_McstTx/LUT__209|in[1]                          lut                  0                  1.276           2          (78,3)
+ U2_Mcst2MII/U1_McstTx/LUT__209|out                            lut                  0                  1.276           6          (78,3)
+ U2_Mcst2MII/U1_McstTx/LUT__209|O                              efl              0.771                  2.047           6          (78,3)
+   Routing elements:  
+     Manhattan distance of X:2, Y:3
+ U2_Mcst2MII/U1_McstTx/LUT__224|I[2]                           efl              0.147                  2.194           6          (80,6)
+ U2_Mcst2MII/U1_McstTx/LUT__224|in[2]                          lut                  0                  2.194           6          (80,6)
+ U2_Mcst2MII/U1_McstTx/LUT__224|out                            lut                  0                  2.194           3          (80,6)
+ U2_Mcst2MII/U1_McstTx/LUT__224|O                              efl              0.825                  3.019           3          (80,6)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoRdAddrCnt[1]~FF|CE        ff               0.175                  3.194           3          (81,5)
+
+Capture Clock Path
+pin name                                                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================================================
+ TxMcstClk                                                  inpad               0                      0           2          (160,118)
+ TxMcstClk                                                  inpad             0.2                    0.2           2          (160,118)
+ TxMcstClk                                                  io                  0                    0.2           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                      gbuf_block       0.32                   0.52           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                          gbuf             3.59                   4.11           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                          gbuf                0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                     gbuf_block          0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoRdAddrCnt[1]~FF|CLK    ff                  0                   4.11          51          (81,5)
+
+######################################################################
+Path Detail Report (TxMcstClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[0]~FF|CLK
+Path End      : Mcst2MII_TxMcstData[0]~FF|D
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : 0.718  (required time - arrival time)
+Delay         : 1.262
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 1.662
+--------------------------------------------
+End-of-path arrival time       : 5.772
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================================
+ TxMcstClk                                               inpad               0                      0           2          (160,118)
+ TxMcstClk                                               inpad             0.2                    0.2           2          (160,118)
+ TxMcstClk                                               io                  0                    0.2           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                   gbuf_block       0.32                   0.52           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                       gbuf             3.59                   4.11           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                       gbuf                0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                  gbuf_block          0                   4.11          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[0]~FF|CLK    ff                  0                   4.11          51          (77,3)
+
+Data Path
+pin name                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[0]~FF|Q        ff               0.282                  0.282           6          (77,3)
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[0]~FF|O_seq    eft              1.146                  1.428           6          (77,3)
+   Routing elements:  
+     Manhattan distance of X:4, Y:1
+ Mcst2MII_TxMcstData[0]~FF|I[3]                            eft              0.116                  1.544           6          (73,2)
+ Mcst2MII_TxMcstData[0]~FF|in[3]                           lut4                 0                  1.544           6          (73,2)
+ Mcst2MII_TxMcstData[0]~FF|D                               ff               0.118                  1.662           6          (73,2)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ RxMcstClk                                 inpad               0                      0           2          (160,123)
+ RxMcstClk                                 inpad             0.2                    0.2           2          (160,123)
+ RxMcstClk                                 io                  0                    0.2           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in     gbuf_block       0.32                   0.52           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I         gbuf             3.59                   4.11           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O         gbuf                0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout    gbuf_block          0                   4.11         410          (159,123)
+ Mcst2MII_TxMcstData[0]~FF|CLK             ff                  0                   4.11         410          (73,2)
+
+######################################################################
+Path Detail Report (RxMcstClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[5]~FF|CLK
+Path End      : U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[0]~FF|D
+Launch Clock  : RxMcstClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : -0.066  (required time - arrival time)
+Delay         : 2.046
+
+Logic Level : 2
+Non-global nets on path : 2
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 2.446
+--------------------------------------------
+End-of-path arrival time       : 6.556
+
+Constraint                     : 2.5
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 6.49
+
+
+Launch Clock Path
+pin name                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================
+ RxMcstClk                                                 inpad               0                      0           2          (160,123)
+ RxMcstClk                                                 inpad             0.2                    0.2           2          (160,123)
+ RxMcstClk                                                 io                  0                    0.2           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                     gbuf_block       0.32                   0.52           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                         gbuf             3.59                   4.11           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                         gbuf                0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                    gbuf_block          0                   4.11         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[5]~FF|CLK    ff                  0                   4.11         410          (127,38)
+
+Data Path
+pin name                                                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==============================================================================================================================================
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[5]~FF|Q               ff               0.282                  0.282           2          (127,38)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[5]~FF|O_seq           eft              1.192                  1.474           2          (127,38)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ U2_Mcst2MII/U2_McstRx/LUT__1626|I[0]                               efl              0.251                  1.724           2          (128,37)
+ U2_Mcst2MII/U2_McstRx/LUT__1626|in[0]                              lut                  0                  1.725           2          (128,37)
+ U2_Mcst2MII/U2_McstRx/LUT__1626|out                                lut                  0                  1.725           2          (128,37)
+ U2_Mcst2MII/U2_McstRx/LUT__1626|O                                  efl              0.337                  2.061           2          (128,37)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[0]~FF|I[0]     eft              0.267                  2.328           2          (127,37)
+ U2_Mcst2MII/U2_McstRx/LUT__1627|in[0]                              lut                  0                  2.328           2          (127,37)
+ U2_Mcst2MII/U2_McstRx/LUT__1627|out                                lut                  0                  2.328           2          (127,37)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[0]~FF|D        ff               0.118                  2.446           2          (127,37)
+
+Capture Clock Path
+pin name                                                         model name    delay (ns)   cumulative delay (ns)    pins on net   location
+============================================================================================================================================
+ SysClk                                                           inpad               0                      0           2          (0,118)
+ SysClk                                                           inpad             0.2                    0.2           2          (0,118)
+ SysClk                                                           io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in                            gbuf_block       0.32                   0.52           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I                                gbuf             3.59                   4.11           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O                                gbuf                0                   4.11         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout                           gbuf_block          0                   4.11         437          (1,118)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[0]~FF|CLK    ff                  0                   4.11         437          (127,37)
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (RxMcstClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/U2_McstDecode/FPrimitData[2]~FF|CLK
+Path End      : U2_Mcst2MII/U2_McstRx/U2_McstDecode/U3_FrontMcstDecRom/U2_McstDecode|RADDR[2]
+Launch Clock  : RxMcstClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : 0.117  (arrival time - required time)
+Delay         : 0.17
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.177
+--------------------------------------------
+End-of-path arrival time       : 2.232
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================================================
+ RxMcstClk                                                                                 inpad               0                      0           2          (160,123)
+ RxMcstClk                                                                                 inpad             0.1                    0.1           2          (160,123)
+ RxMcstClk                                                                                 io                  0                    0.1           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                                                     gbuf_block       0.16                   0.26           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                                                         gbuf            1.795                  2.055           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                                                         gbuf                0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                                                    gbuf_block          0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/U2_McstDecode/FPrimitData[2]~FF|CLK    ff                  0                  2.055         410          (129,24)
+
+Data Path
+pin name                                                                                    model name     delay (ns)   cumulative delay (ns)    pins on net   location
+========================================================================================================================================================================
+ U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/U2_McstDecode/FPrimitData[2]~FF|Q        ff                0.141                  0.141           2          (129,24)
+ U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/U2_McstDecode/FPrimitData[2]~FF|O_seq    eft                0.17                  0.311           2          (129,24)
+   Routing elements:  
+     Manhattan distance of X:4, Y:2
+ U2_Mcst2MII/U2_McstRx/U2_McstDecode/U3_FrontMcstDecRom/U2_McstDecode|RADDR[2]               ram_4096x20      -0.134                  0.177           2          (133,22)
+
+Capture Clock Path
+pin name                                                                     model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================
+ RxMcstClk                                                                    inpad                0                      0           2          (160,123)
+ RxMcstClk                                                                    inpad              0.1                    0.1           2          (160,123)
+ RxMcstClk                                                                    io                   0                    0.1           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                                        gbuf_block        0.16                   0.26           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                                            gbuf             1.795                  2.055           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                                            gbuf                 0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                                       gbuf_block           0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/U2_McstDecode/U3_FrontMcstDecRom/U2_McstDecode|RCLK    ram_4096x20          0                  2.055         410          (133,22)
+
+######################################################################
+Path Detail Report (SysClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U4_LoopBuff/InMiiDataEnReg[0]~FF|CLK
+Path End      : U4_LoopBuff/FifoRdAddr[0]~FF|D
+Launch Clock  : SysClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : 0.306  (arrival time - required time)
+Delay         : 0.225
+
+Logic Level : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.366
+--------------------------------------------
+End-of-path arrival time       : 2.421
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ SysClk                                    inpad               0                      0           2          (0,118)
+ SysClk                                    inpad             0.1                    0.1           2          (0,118)
+ SysClk                                    io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in     gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I         gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O         gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout    gbuf_block          0                  2.055         437          (1,118)
+ U4_LoopBuff/InMiiDataEnReg[0]~FF|CLK      ff                  0                  2.055         437          (105,3)
+
+Data Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ U4_LoopBuff/InMiiDataEnReg[0]~FF|Q        ff               0.141                  0.141           6          (105,3)
+ U4_LoopBuff/InMiiDataEnReg[0]~FF|O_seq    eft              0.167                  0.308           6          (105,3)
+   Routing elements:  
+     Manhattan distance of X:0, Y:1
+ U4_LoopBuff/FifoRdAddr[0]~FF|I[3]         eft              0.058                  0.366           6          (105,2)
+ LUT__10011|in[3]                          lut                  0                  0.366           6          (105,2)
+ LUT__10011|out                            lut                  0                  0.366           2          (105,2)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ SysClk                                    inpad               0                      0           2          (0,118)
+ SysClk                                    inpad             0.1                    0.1           2          (0,118)
+ SysClk                                    io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in     gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I         gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O         gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout    gbuf_block          0                  2.055         437          (1,118)
+ U4_LoopBuff/FifoRdAddr[0]~FF|CLK          ff                  0                  2.055         437          (105,2)
+
+######################################################################
+Path Detail Report (SysClk vs TxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[12]~FF|CLK
+Path End      : U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[2]~FF|D
+Launch Clock  : SysClk (RISE)
+Capture Clock : TxMcstClk (RISE)
+Slack         : 0.307  (arrival time - required time)
+Delay         : 0.226
+
+Logic Level : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------------
+End-of-path arrival time       : 2.422
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================================================
+ SysClk                                                     inpad               0                      0           2          (0,118)
+ SysClk                                                     inpad             0.1                    0.1           2          (0,118)
+ SysClk                                                     io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in                      gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I                          gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O                          gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout                     gbuf_block          0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[12]~FF|CLK    ff                  0                  2.055         437          (81,14)
+
+Data Path
+pin name                                                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================================================
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[12]~FF|Q           ff               0.141                  0.141           2          (81,14)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoDataBuff[12]~FF|O_seq       eft              0.168                  0.309           2          (81,14)
+   Routing elements:  
+     Manhattan distance of X:0, Y:1
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[2]~FF|I[3]     eft              0.058                  0.367           2          (81,13)
+ U2_Mcst2MII/U1_McstTx/LUT__277|in[3]                            lut                  0                  0.367           2          (81,13)
+ U2_Mcst2MII/U1_McstTx/LUT__277|out                              lut                  0                  0.367           2          (81,13)
+
+Capture Clock Path
+pin name                                                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================
+ TxMcstClk                                                     inpad               0                      0           2          (160,118)
+ TxMcstClk                                                     inpad             0.1                    0.1           2          (160,118)
+ TxMcstClk                                                     io                  0                    0.1           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                         gbuf_block       0.16                   0.26           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                             gbuf            1.795                  2.055           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                             gbuf                0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                        gbuf_block          0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U1_TxFifo/dffrs_132/TxData[2]~FF|CLK    ff                  0                  2.055          51          (81,13)
+
+######################################################################
+Path Detail Report (SysClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : DegTxClkCnt[1]~FF|CLK
+Path End      : TxClkEnReg[0]~FF|D
+Launch Clock  : SysClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : 0.307  (arrival time - required time)
+Delay         : 0.226
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------------
+End-of-path arrival time       : 2.422
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ SysClk                                    inpad               0                      0           2          (0,118)
+ SysClk                                    inpad             0.1                    0.1           2          (0,118)
+ SysClk                                    io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in     gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I         gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O         gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout    gbuf_block          0                  2.055         437          (1,118)
+ DegTxClkCnt[1]~FF|CLK                     ff                  0                  2.055         437          (87,16)
+
+Data Path
+pin name                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================
+ DegTxClkCnt[1]~FF|Q        ff               0.141                  0.141           5          (87,16)
+ DegTxClkCnt[1]~FF|O_seq    eft              0.168                  0.309           5          (87,16)
+   Routing elements:  
+     Manhattan distance of X:0, Y:1
+ TxClkEnReg[0]~FF|I[3]      eft              0.058                  0.367           5          (87,15)
+ TxClkEnReg[0]~FF|in[3]     lut4                 0                  0.367           5          (87,15)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ RxMcstClk                                 inpad               0                      0           2          (160,123)
+ RxMcstClk                                 inpad             0.1                    0.1           2          (160,123)
+ RxMcstClk                                 io                  0                    0.1           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in     gbuf_block       0.16                   0.26           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I         gbuf            1.795                  2.055           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O         gbuf                0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout    gbuf_block          0                  2.055         410          (159,123)
+ TxClkEnReg[0]~FF|CLK                      ff                  0                  2.055         410          (87,15)
+
+######################################################################
+Path Detail Report (TxMcstClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/TxByteGen[2]~FF|CLK
+Path End      : U2_Mcst2MII/TxByteClkReg[0]~FF|D
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : 0.483  (arrival time - required time)
+Delay         : 0.402
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.543
+--------------------------------------------
+End-of-path arrival time       : 2.598
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ TxMcstClk                                 inpad               0                      0           2          (160,118)
+ TxMcstClk                                 inpad             0.1                    0.1           2          (160,118)
+ TxMcstClk                                 io                  0                    0.1           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in     gbuf_block       0.16                   0.26           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I         gbuf            1.795                  2.055           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O         gbuf                0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout    gbuf_block          0                  2.055          51          (159,118)
+ U2_Mcst2MII/TxByteGen[2]~FF|CLK           ff                  0                  2.055          51          (151,94)
+
+Data Path
+pin name                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================
+ U2_Mcst2MII/TxByteGen[2]~FF|Q           ff               0.141                  0.141           3          (151,94)
+ U2_Mcst2MII/TxByteGen[2]~FF|O_seq       eft              0.268                  0.409           3          (151,94)
+   Routing elements:  
+     Manhattan distance of X:6, Y:0
+ U2_Mcst2MII/TxByteClkReg[0]~FF|I[0]     eft              0.133                  0.543           3          (145,94)
+ U2_Mcst2MII/TxByteClkReg[0]~FF|in[0]    lut4                 0                  0.543           3          (145,94)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ SysClk                                    inpad               0                      0           2          (0,118)
+ SysClk                                    inpad             0.1                    0.1           2          (0,118)
+ SysClk                                    io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in     gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I         gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O         gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout    gbuf_block          0                  2.055         437          (1,118)
+ U2_Mcst2MII/TxByteClkReg[0]~FF|CLK        ff                  0                  2.055         437          (145,94)
+
+######################################################################
+Path Detail Report (TxMcstClk vs TxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/TxByteGen[0]~FF|CLK
+Path End      : U2_Mcst2MII/TxByteGen[0]~FF|D
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : TxMcstClk (RISE)
+Slack         : 0.307  (arrival time - required time)
+Delay         : 0.226
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.367
+--------------------------------------------
+End-of-path arrival time       : 2.422
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ TxMcstClk                                 inpad               0                      0           2          (160,118)
+ TxMcstClk                                 inpad             0.1                    0.1           2          (160,118)
+ TxMcstClk                                 io                  0                    0.1           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in     gbuf_block       0.16                   0.26           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I         gbuf            1.795                  2.055           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O         gbuf                0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout    gbuf_block          0                  2.055          51          (159,118)
+ U2_Mcst2MII/TxByteGen[0]~FF|CLK           ff                  0                  2.055          51          (153,90)
+
+Data Path
+pin name                             model name    delay (ns)   cumulative delay (ns)    pins on net   location
+================================================================================================================
+ U2_Mcst2MII/TxByteGen[0]~FF|Q        ff               0.141                  0.141           4          (153,90)
+ U2_Mcst2MII/TxByteGen[0]~FF|O_seq    eft              0.168                  0.309           4          (153,90)
+ U2_Mcst2MII/TxByteGen[0]~FF|I[3]     eft              0.058                  0.367           4          (153,90)
+ U2_Mcst2MII/TxByteGen[0]~FF|in[3]    lut4                 0                  0.367           4          (153,90)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ TxMcstClk                                 inpad               0                      0           2          (160,118)
+ TxMcstClk                                 inpad             0.1                    0.1           2          (160,118)
+ TxMcstClk                                 io                  0                    0.1           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in     gbuf_block       0.16                   0.26           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I         gbuf            1.795                  2.055           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O         gbuf                0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout    gbuf_block          0                  2.055          51          (159,118)
+ U2_Mcst2MII/TxByteGen[0]~FF|CLK           ff                  0                  2.055          51          (153,90)
+
+######################################################################
+Path Detail Report (TxMcstClk vs RxMcstClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[1]~FF|CLK
+Path End      : Mcst2MII_TxMcstData[1]~FF|D
+Launch Clock  : TxMcstClk (RISE)
+Capture Clock : RxMcstClk (RISE)
+Slack         : 0.595  (arrival time - required time)
+Delay         : 0.514
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.655
+--------------------------------------------
+End-of-path arrival time       : 2.71
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================================
+ TxMcstClk                                               inpad               0                      0           2          (160,118)
+ TxMcstClk                                               inpad             0.1                    0.1           2          (160,118)
+ TxMcstClk                                               io                  0                    0.1           2          (160,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|IO_in                   gbuf_block       0.16                   0.26           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|I                       gbuf            1.795                  2.055           2          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|O                       gbuf                0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__0|clkout                  gbuf_block          0                  2.055          51          (159,118)
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[1]~FF|CLK    ff                  0                  2.055          51          (77,4)
+
+Data Path
+pin name                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[1]~FF|Q        ff               0.141                  0.141           6          (77,4)
+ U2_Mcst2MII/U1_McstTx/U3_McsOut/TxMcstDOut[1]~FF|O_seq    eft              0.402                  0.543           6          (77,4)
+   Routing elements:  
+     Manhattan distance of X:22, Y:0
+ Mcst2MII_TxMcstData[1]~FF|I[1]                            eft              0.112                  0.655           6          (55,4)
+ Mcst2MII_TxMcstData[1]~FF|in[1]                           lut4                 0                  0.655           6          (55,4)
+
+Capture Clock Path
+pin name                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================
+ RxMcstClk                                 inpad               0                      0           2          (160,123)
+ RxMcstClk                                 inpad             0.1                    0.1           2          (160,123)
+ RxMcstClk                                 io                  0                    0.1           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in     gbuf_block       0.16                   0.26           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I         gbuf            1.795                  2.055           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O         gbuf                0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout    gbuf_block          0                  2.055         410          (159,123)
+ Mcst2MII_TxMcstData[1]~FF|CLK             ff                  0                  2.055         410          (55,4)
+
+######################################################################
+Path Detail Report (RxMcstClk vs SysClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[11]~FF|CLK
+Path End      : U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|D
+Launch Clock  : RxMcstClk (RISE)
+Capture Clock : SysClk (RISE)
+Slack         : 0.33  (arrival time - required time)
+Delay         : 0.249
+
+Logic Level : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.39
+--------------------------------------------
+End-of-path arrival time       : 2.445
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================================================
+ RxMcstClk                                                  inpad               0                      0           2          (160,123)
+ RxMcstClk                                                  inpad             0.1                    0.1           2          (160,123)
+ RxMcstClk                                                  io                  0                    0.1           2          (160,123)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|IO_in                      gbuf_block       0.16                   0.26           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|I                          gbuf            1.795                  2.055           2          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|O                          gbuf                0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/CLKBUF__0|clkout                     gbuf_block          0                  2.055         410          (159,123)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[11]~FF|CLK    ff                  0                  2.055         410          (127,35)
+
+Data Path
+pin name                                                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==============================================================================================================================================
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[11]~FF|Q              ff               0.141                  0.141           2          (127,35)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoDataBuff[11]~FF|O_seq          eft              0.168                  0.309           2          (127,35)
+   Routing elements:  
+     Manhattan distance of X:2, Y:0
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|I[2]     eft               0.08                   0.39           2          (125,35)
+ U2_Mcst2MII/U2_McstRx/LUT__1629|in[2]                              lut                  0                   0.39           2          (125,35)
+ U2_Mcst2MII/U2_McstRx/LUT__1629|out                                lut                  0                   0.39           2          (125,35)
+
+Capture Clock Path
+pin name                                                         model name    delay (ns)   cumulative delay (ns)    pins on net   location
+============================================================================================================================================
+ SysClk                                                           inpad               0                      0           2          (0,118)
+ SysClk                                                           inpad             0.1                    0.1           2          (0,118)
+ SysClk                                                           io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|IO_in                            gbuf_block       0.16                   0.26           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|I                                gbuf            1.795                  2.055           2          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|O                                gbuf                0                  2.055         437          (1,118)
+ U2_Mcst2MII/U1_McstTx/CLKBUF__1|clkout                           gbuf_block          0                  2.055         437          (1,118)
+ U2_Mcst2MII/U2_McstRx/U1_RxFifo/dffrs_132/MiiRxData[1]~FF|CLK    ff                  0                  2.055         437          (125,35)
+
+---------- Path Details for Min Critical Paths (end) ---------------
