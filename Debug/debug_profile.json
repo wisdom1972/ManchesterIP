@@ -1,0 +1,79 @@
+{
+    "debug_cores": [
+        {
+            "type": "vio",
+            "probes": [
+                {
+                    "init": null,
+                    "name": "PrbsError",
+                    "width": 1
+                },
+                {
+                    "init": null,
+                    "name": "PrbsRight",
+                    "width": 1
+                },
+                {
+                    "init": "0x0",
+                    "name": "LedCntRst",
+                    "width": 1
+                },
+                {
+                    "init": "0x0",
+                    "name": "ControlMiiLoop",
+                    "width": 1
+                }
+            ],
+            "name": "DPLLTest"
+        },
+        {
+            "name": "Mcst2MII",
+            "trigin_en": false,
+            "probes": [
+                {
+                    "probe_type": 1,
+                    "name": "TxMcstData",
+                    "width": 2
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiTxCEn",
+                    "width": 1
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiTxData",
+                    "width": 3
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiTxEn",
+                    "width": 1
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiRxCEn",
+                    "width": 1
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiRxData",
+                    "width": 4
+                },
+                {
+                    "probe_type": 1,
+                    "name": "MiiRxDV",
+                    "width": 1
+                },
+                {
+                    "probe_type": 1,
+                    "name": "PrbsError",
+                    "width": 1
+                }
+            ],
+            "trigout_en": false,
+            "type": "la",
+            "data_depth": 4096
+        }
+    ]
+}
