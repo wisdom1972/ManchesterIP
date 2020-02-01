@@ -1,0 +1,76 @@
+
+# Efinity Interface Configuration
+# Version: 2019.3.272
+# Date: 2020-02-01 21:48
+
+# Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
+
+# [required] (input|output|clkout), x, y, z, __bypass__|[~|!]<clock>, [[~|!]<pin_name>] | __vcc__ | __gnd__
+clkout, 3, 243, -1, Clk50MIn
+clkout, 137, 243, -1, Clk50MIn
+clkout, 77, 0, -1, DPllRefClk
+clkout, 76, 0, -1, LvdsTxClk
+clkout, 0, 66, -1, RxMcstClk
+clkout, 116, 0, -1, RxMcstClk
+clkout, 115, 0, -1, RxMcstSClk
+clkout, 47, 0, -1, TxMcstClk
+clkout, 46, 0, -1, TxMcstSClk
+input, 160, 124, 1, __bypass__, Clk50MIn
+output, 74, 0, 0, __bypass__, DPllLvdsClk[0]
+output, 75, 0, 0, __bypass__, DPllLvdsClk[1]
+output, 75, 0, 2, __bypass__, DPllLvdsClk[2]
+output, 76, 0, 0, __bypass__, DPllLvdsClk[3]
+output, 77, 0, 0, __bypass__, DPllLvdsClk[4]
+output, 77, 0, 2, __bypass__, DPllLvdsClk[5]
+output, 78, 0, 0, __bypass__, DPllLvdsClk[6]
+output, 79, 0, 0, __bypass__, DPllLvdsClk[7]
+input, 0, 119, 1, __bypass__, DPllRefClk
+input, 0, 6, 3, __bypass__, jtag_inst1_CAPTURE
+input, 0, 2, 3, __bypass__, jtag_inst1_DRCK
+input, 0, 4, 3, __bypass__, jtag_inst1_RESET
+input, 0, 5, 1, __bypass__, jtag_inst1_RUNTEST
+input, 0, 2, 1, __bypass__, jtag_inst1_SEL
+input, 0, 5, 3, __bypass__, jtag_inst1_SHIFT
+input, 0, 4, 1, __bypass__, jtag_inst1_TCK
+input, 0, 3, 1, __bypass__, jtag_inst1_TDI
+output, 0, 2, 0, __bypass__, jtag_inst1_TDO
+input, 0, 3, 3, __bypass__, jtag_inst1_TMS
+input, 0, 6, 1, __bypass__, jtag_inst1_UPDATE
+output, 160, 184, 2, __bypass__, LED[0]
+output, 160, 182, 0, __bypass__, LED[1]
+output, 160, 142, 0, __bypass__, LED[2]
+output, 160, 139, 2, __bypass__, LED[3]
+output, 160, 19, 2, __bypass__, LED[4]
+output, 160, 17, 0, __bypass__, LED[5]
+output, 160, 14, 2, __bypass__, LED[6]
+output, 160, 12, 0, __bypass__, LED[7]
+input, 0, 120, 1, __bypass__, LvdsTxClk
+input, 2, 243, 1, __bypass__, PllLocked[0]
+input, 3, 243, 3, __bypass__, PllLocked[1]
+input, 158, 243, 1, __bypass__, PllLocked[2]
+input, 160, 123, 1, __bypass__, RxMcstClk
+input, 115, 0, 1, __bypass__, RxMcstData[0]
+input, 115, 0, 3, __bypass__, RxMcstData[1]
+input, 116, 0, 1, __bypass__, RxMcstData[2]
+input, 117, 0, 3, __bypass__, RxMcstData[3]
+input, 118, 0, 1, __bypass__, RxMcstData[4]
+input, 119, 0, 1, __bypass__, RxMcstData[5]
+input, 117, 0, 1, __bypass__, RxMcstData[6]
+input, 119, 0, 3, __bypass__, RxMcstData[7]
+input, 160, 121, 1, __bypass__, RxMcstSClk
+input, 160, 122, 1, __bypass__, RxTestClk
+input, 0, 118, 1, __bypass__, SysClk
+input, 160, 118, 1, __bypass__, TxMcstClk
+input, 0, 121, 1, __bypass__, TxMcstClkA
+output, 44, 0, 0, __bypass__, TxMcstData[0]
+output, 45, 0, 0, __bypass__, TxMcstData[1]
+output, 45, 0, 2, __bypass__, TxMcstData[2]
+output, 46, 0, 0, __bypass__, TxMcstData[3]
+output, 47, 0, 0, __bypass__, TxMcstData[4]
+output, 47, 0, 2, __bypass__, TxMcstData[5]
+output, 48, 0, 0, __bypass__, TxMcstData[6]
+output, 49, 0, 0, __bypass__, TxMcstData[7]
+input, 160, 119, 1, __bypass__, TxMcstSClk
+input, 0, 122, 1, __bypass__, TxMcstSClkA
+input, 160, 120, 1, __bypass__, TxSysClk
+input, 0, 123, 1, __bypass__, TxSysClkA
