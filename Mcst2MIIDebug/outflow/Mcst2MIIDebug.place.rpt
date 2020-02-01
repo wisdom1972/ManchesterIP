@@ -1,0 +1,78 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Date: Sat Feb 01 21:48:36 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F256
+Top-level Entity Name: Mcst2MIIDebug
+
+---------- Resource Summary (begin) ----------
+Inputs: 25 / 470 (5.32%)
+Outputs: 17 / 595 (2.86%)
+Clocks: 9 / 16 (56.25%)
+Logic Elements: 4322 / 19728 (21.91%)
+	LE: LUTs/Adders: 2724 / 19728 (13.81%)
+	LE: Registers: 2343 / 13920 (16.83%)
+Memory Blocks: 17 / 204 (8.33%)
+Multipliers: 0 / 36 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                                                                           NAME                                                                                                            | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                                               U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/U1_DlmtRom                                                                               | SDP  |     5      |      5      | READ_FIRST |   false    |
+|                                                                           U2_Mcst2MII/U2_McstRx/U2_McstDecode/U3_FrontMcstDecRom/U2_McstDecode                                                                            | SDP  |     10     |     10      | READ_FIRST |   false    |
+|                                                                            U2_Mcst2MII/U2_McstRx/U2_McstDecode/U3_RearMcstDecRom/U2_McstDecode                                                                            | SDP  |     10     |     10      | READ_FIRST |   false    |
+|                                                               edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_1(10)                                                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                         edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_1(10)                                                          | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                    edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_1(10)                                                    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                              edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_1(10)                                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                         edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_1(10)                                         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                    edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_1(10)                                    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                               edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_1(10)                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                          edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_1(10)                          | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                     edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_1(10)                     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_1(10)                | SDP  |     1      |      1      | READ_FIRST |   false    |
+|           edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_1(10)           | SDP  |     1      |      1      | READ_FIRST |   false    |
+|      edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_1(10)      | SDP  |     1      |      1      | READ_FIRST |   false    |
+| edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10) | SDP  |     1      |      1      | READ_FIRST |   false    |
+| edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(01) | SDP  |     1      |      1      | READ_FIRST |   false    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 2 seconds
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|    jtag_inst1_DRCK     |    Input     |
+|     jtag_inst1_TMS     |    Input     |
+|   jtag_inst1_RUNTEST   |    Input     |
+|       TxMcstClkA       |    Input     |
+|      TxMcstSClkA       |    Input     |
+|       TxSysClkA        |    Input     |
+|     DPllLvdsClk[0]     |    Output    |
+|     DPllLvdsClk[1]     |    Output    |
+|     DPllLvdsClk[2]     |    Output    |
+|     DPllLvdsClk[3]     |    Output    |
+|     DPllLvdsClk[4]     |    Output    |
+|     DPllLvdsClk[5]     |    Output    |
+|     DPllLvdsClk[6]     |    Output    |
+|     DPllLvdsClk[7]     |    Output    |
+|      PllLocked[2]      |    Input     |
+|        TxSysClk        |    Input     |
+|       RxTestClk        |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 18 seconds
