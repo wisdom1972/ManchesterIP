@@ -1,0 +1,1 @@
+D:\WorkProgramFiles\Efinity\2019.2\debugger\bin\efinity_dbg.bat
