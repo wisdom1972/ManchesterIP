@@ -1,0 +1,8 @@
+2020-02-01 20:54:09,206 INFO: efx_dbg.jtag.jcf (338): write_ir(): write_ir: 4: 0011
+2020-02-01 20:54:09,223 INFO: efx_dbg.jtag.jcf (383): read_dr(): read_dr(32): 32: 00000000 00100001 00001010 01111001
+2020-02-01 20:54:10,342 INFO: efx_dbg.jtag.jcf (338): write_ir(): write_ir: 4: 0011
+2020-02-01 20:54:10,358 INFO: efx_dbg.jtag.jcf (383): read_dr(): read_dr(32): 32: 00000000 00100001 00001010 01111001
+2020-02-01 20:54:10,459 INFO: efx_dbg.jtag.jcf (338): write_ir(): write_ir: 4: 0100
+2020-02-01 20:54:15,098 INFO: efx_dbg.jtag.jcf (338): write_ir(): write_ir: 4: 0111
+2020-02-01 20:54:15,100 INFO: efx_dbg.jtag.jcf (370): write_dr(): write_dr: 100: 0000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2020-02-01 20:54:15,102 INFO: efx_dbg.jtag.jcf (338): write_ir(): write_ir: 4: 0011
