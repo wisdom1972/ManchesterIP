@@ -1,0 +1,752 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2019.3.272.1.6
+[EFX-0000 INFO] Compiled: Dec  9 2019.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+INFO: ***** Beginning Analysis ... *****
+INFO: The default VHDL library search path is now "C:/Efinity/2019.3/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v' (VERI-1482)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v(3): INFO: analyzing included file 'PlcCommBusParamDefine.v' (VERI-1328)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v(3): INFO: back to file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v' (VERI-2320)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Manchester2MII.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/MIIDataBuff.v' (VERI-1482)
+INFO: Analysis took 0.159632 seconds.
+INFO: 	Analysis took 0.159 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 30.1 MB, end = 34.156 MB, delta = 4.056 MB
+INFO: 	Analysis peak virtual memory usage = 81.264 MB
+INFO: Analysis resident set memory usage: begin = 29.416 MB, end = 34.596 MB, delta = 5.18 MB
+INFO: 	Analysis peak resident set memory usage = 34.6 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v(19): INFO: compiling module 'Mcst2MIIDebug' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(375): INFO: compiling module 'PRBS9GenX4' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(645): INFO: compiling module 'PRBS9Gen' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(645): INFO: compiling module 'PRBS9Gen(Alignment=9'b100001000)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(645): INFO: compiling module 'PRBS9Gen(Alignment=9'b100101100)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(645): INFO: compiling module 'PRBS9Gen(Alignment=9'b110011000)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Manchester2MII.v(75): INFO: compiling module 'Mcst2MII' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(139): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(685): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(687): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(695): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(702): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(705): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(708): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(711): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(714): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(717): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(720): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(723): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(725): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(727): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(730): WARNING: port 'I2' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(737): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(740): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(749): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(752): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(755): WARNING: port 'I3' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(75): INFO: compiling module 'McstTx' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000100010001000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000100011110000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=1'b1,SR_SYNC=1'b1,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=1'b0,SR_SYNC=1'b0,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=1'b0,SR_SYNC=1'b1,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=1'b0,SR_SYNC=1'b0,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100010001000100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01000100010001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011100001000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01010000010100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1011101110111011)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100000001000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01000000010000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000000010000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0110011001100110)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100000110000010)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1001000010010000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1011111010111110)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111000001000100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01100000011000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0101001101010011)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1100111110100000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111110000001010)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_GBUFCE(CE_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(139): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(684): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(687): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(695): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(701): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(704): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(707): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(710): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(713): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(716): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(719): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(722): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(725): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(727): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(729): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(736): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(739): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(748): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(751): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v(754): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2331): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2359): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2395): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2423): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2451): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2478): WARNING: port 'CO' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2586): WARNING: port 'WDATA' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2625): WARNING: port 'WDATA' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2664): WARNING: port 'WDATA' is not connected on this instance (VERI-2435)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2695): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2704): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2706): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2718): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2721): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2724): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2726): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2729): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2731): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2740): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2743): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2746): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2751): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2753): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2756): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2759): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2762): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2765): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2768): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2771): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2777): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2791): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2794): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2797): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2800): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2812): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2815): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2824): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2827): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2830): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2833): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2836): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2839): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2842): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2847): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2853): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2856): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2859): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2865): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2868): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2871): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2874): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2877): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2880): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2886): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2888): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2894): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2897): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2900): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2903): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2906): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2909): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2912): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2915): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2918): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2921): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2927): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2976): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2983): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2986): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3000): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3004): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3007): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3010): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3014): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3017): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3024): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3028): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3034): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3037): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3045): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3048): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3052): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3055): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3059): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3062): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3066): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3069): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3073): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3076): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3080): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3083): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3087): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3090): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3094): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3097): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3101): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3104): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3108): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3111): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3115): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3118): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3122): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3125): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3129): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3132): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3136): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3139): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3143): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3146): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3149): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3152): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3155): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3158): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3161): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3164): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3167): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3170): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3174): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3181): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3186): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3201): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3204): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3207): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3209): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3218): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3228): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3230): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3245): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3261): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3264): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3267): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3270): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3273): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3276): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3279): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3282): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3285): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3288): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3291): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3298): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3301): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3308): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3315): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3318): WARNING: port 'I3' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3321): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3324): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3327): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3333): WARNING: port 'I2' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3343): WARNING: port 'O' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3347): WARNING: port 'O' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(75): INFO: compiling module 'McstRx' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000000000000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=1'b1,SR_SYNC=1'b1,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=1'b1,SR_SYNC=1'b1,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b0)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=1'b0,SR_SYNC=1'b0,SR_VALUE=1'b0,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b0)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=1'b1,SR_SYNC=1'b1,SR_VALUE=1'b1,SR_SYNC_PRIORITY=1'b1,D_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD(I0_POLARITY=1'b0,I1_POLARITY=1'b1)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b0)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K(READ_WIDTH=5,WRITE_WIDTH=5,INIT_0=256'b010000100001000000110011100000000000100000000000000010000010000100001000010010000000000000001000001100111000000000000000000000000000000000110001100011000110100000000000000010000011000110001100011010000000000000001000001000010000100001001000000000000000100,INIT_1=256'b010000100001000011000100001000010000100001000010000001100111000000000001000000000000000100000110001100011000110100000000000000010000010000100001000010010000000000000001000100001100010000100001000010000100001000010000110001000010000100,INIT_2=256'b011000110001100011010000000000000001000001100011000110001101000000000000000100000100001000010000100100000000000000010000010001100000000000000100001000010000100001000110000000000000010001100001000110000100011000000000000001000110000100011000000000,INIT_3=256'b1000010000100001000010000100001000010000100001000010000100001000000100011000000000000001000010000100001000010001100000000000000100011000010001100100001100010000100001000000000000000100000100001000010000100100000000000000010000011001110000000000000000000000,INIT_4=256'b01000010000000000000010000100001000010000100001000000000000100001000010000100000010000100000000000010000100001000010000001100011000110001100000000000011100111000100001000000000000001000010000100001000010000100000000000000000000000111001110100001000010000,INIT_5=256'b010000100001000000110011100000000000100000000000000010000010000100001000010010000000000000001000001100111000000000000000000000000000000000110001100011000110100000000000000010000011000110001100011010000000000000001000001000010000100001001000000000000000100,INIT_6=256'b1100011000110000000000001110011100010001100000000000000100001000010000100100001100010000100001000000000000000100000110001100011000110100000000000000010000010000100001000010010000000000000001000100001100010000100001000010000100001000010000110001000010000100,INIT_7=256'b010000100001000010000000000000000000000001000010000100001000000000000000000000000100001000010000100000000000000000000000010000100000000000000100001000010000100001000010000000000001000010000100001000000100001000000000000100001000010000100000011000,INIT_8=256'b1000010000100001000010000100001000010000100001000010000100001000000110001100000000000100001000010000100000011000110000000000000110001100011000110001100011000000000000000000000001100011010000100001000010000100001000010000100001000010000000000000000000000000,INIT_9=256'b01000010000100001000000110001100000000000001100011000110001100011000110000000000000110001100011000110001100011000110001100000000000001100011000110001100000000000100001000010000100000011000110000000000000000000000011000110100001000010000,INIT_A=256'b010000100001000000110001100000000000000000000000000000001000010000100001000000000000000000000000001100011000000000000000000000000000000000110001100011000110000000000000000000000011000110001100011000000000000000000000100001000010000100000000000000000000000,INIT_B=256'b010000100001000010000100001000010000100001000010000001100011000000000000000000000000000000000110001100011000110000000000000000000001000010000100001000000000000000000000000100001000010000100001000010000100001000010000100001000010000100,INIT_C=256'b01000010000100001000000000000000010000100100001000010000100000000000000001000010000000000000000000000000000000000100001000000000000000000000000000000000000000000000000000000000000000010000100001000010000000000000000000000001000010000100001000000000,INIT_D=256'b1000010000100001100010000100001000010000100001000010000110001000001000000000000010000000000000000000000000100000000000001000000110001100011000110010000000000000100001000010000110001000000000000000000000000000000000001100001000111001110000000000000000000000,INIT_E=256'b010000000000000100000000000000000000000001000000000000010000001100011000110001100100000000000001000000110001100011000110000000000000000000000000000000011100011001000000000000010000000000000000000000000100000000000001000000000000000111000110100001000010000,INIT_F=256'b010000100001000001110011100000000000000000000000100001000000000000000000000000000000000010000100011100111000000000000000000000000000000010000100001000010000000000000000100001001000010000100001000000000000000010000100000000000000000000000000000000001000010,INIT_10=256'b01110001100100000000000001000000000000000000000000010000000000000100001000010000110001000001100001000110000100000000000001100001000000000000000000000000000000000110000100100001000010000100001000010000100001000010000100001000010000100,INIT_11=256'b0110000100011000010000000000000110000100011000010001100001000000000000011000010000000000000000000000000000000001100001000100000000000001000000000000000000000000010000000000000100000011000110001100011001000000000000010000001100011000110001100000000,INIT_12=256'b1000010000100001100010000100001000010000100001000010000110001000001000000000000010000000000000000000000000100000000000001000000110001100011000110010000000000000100000000000000011100011010000100001000010000100001000011000100001000010000000000000000000000000,INIT_13=256'b010000000000000100000000000000000000000001000000000000010000001100011000110001100100000000000001000000110001100011000110000000000000000000000000000000011100011001000000000000010000000000000000000000000100000000000001000000000000000111000110100001000010000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K(READ_WIDTH=10,WRITE_WIDTH=10,INIT_0=256'b010010000001000101000100010100010000000100000000010000010101000001010100000000010000000001000001010001000101000100010100010001010001000101000100010100010000000100000000010000010100010001010001000000010000000001000001010100000101010000000001000000000100,INIT_1=256'b0100000000010000000001000000000100100000010010000001001000000100100000010001010001000101000100000001000000000100000101000100010100010000000100000000010000010101000001010100000000010000000001000010000001001000000100100000010010000001001000000100100000010010,INIT_2=256'b0101000100010100010001010001000000010000000001000001010001000101000100000001000000000100000101010000010101000000000100000000010000011000010001100001000110000100011000010001100001000110000100011000010001100001000110000100011000010001100001000110000100000000,INIT_3=256'b010001000001000100000100010000010001000001000100000100010000010000110000100011000010001100001000110000100011000010001100001000110000100011000010010000001001000000100000001000000000100000101010000010101000000000100000000010000010100010001010001000101000100,INIT_4=256'b01100001000110000100011000010001100001000110000100011000010000000010000000000100011000010001100001000000001000000000010001010010000101001000010100100001010010000110000100011000010001100001000110000100011000010001100001000101001000010100100010000010001000,INIT_5=256'b010010000001000101000100010100010000000100000000010000010101000001010100000000010000000001000001010001000101000100010100010001010001000101000100010100010000000100000000010000010100010001010001000000010000000001000001010100000101010000000001000000000100,INIT_6=256'b1000010100100001010010000101001000011000010001100001000110000100011000010010000001001000000100000001000000000100000101000100010100010000000100000000010000010101000001010100000000010000000001000010000001001000000100100000010010000001001000000100100000010010,INIT_7=256'b01000011000100001100010000110001000011000100001100010000110001000011000100001100010000110001000011000100001100010000110001000011000010001100001000110000100011000010001100001000110000100000000100000000001000110000100011000010000000010000000000100010100,INIT_8=256'b010001000001000100000100010000010001000001000100000100010000010000110101100011010110000000100000000010000011010110001101011000101001000010100100001101011000110101100010100100001010010001000001000100000100010000010001000001000000000100000000010000000001000,INIT_9=256'b01101011000110101100000001000000000100000110101100011010110001010010000101001000011010110001101011000101001000010100100001010010000101001000010100100001010010000110101100011010110000000100000000010000011010110001101011000101001000010100100010000010001000,INIT_A=256'b010010000001000101000100010100010001100100000110010000000001000000000100000110010000011001000001010001000101000100010100010001010001000101000100010100010001100100000110010000010100010001010001000110010000011001000000000100000000010000011001000001100100,INIT_B=256'b0100000000010000000001000000000100100000010010000001001000000100100000010001010001000101000100011001000001100100000101000100010100010001100100000110010000000001000000000100000110010000011001000010000001001000000100100000010010000001001000000100100000010010,INIT_C=256'b0101000100000000010000000010000110001000011000100000000001000000001000011000100001100010000110001000011000100001100010000110001000011000010001100001000110000100011000010001100001000110000100011000010001100001000110000100011000010001100001000110000100000000,INIT_D=256'b010001000001000100000100010000010001000001000100000100010000010000000101100000010110001011011000101101100000010110000001011000101001000010100100000001011000000101100100000100010000010000110001000011000100001100010000110001000010100010001010001000101000100,INIT_E=256'b01011000000101100010110110001011011000000101100000010110001010010000101001000000010110000001011000101001000010100100001010010000101001000010100100001010010000000101100000010110001011011000101101100000010110000001011000101001000010100100010000010001000,INIT_F=256'b010010000001000101000100010100010001100010000110001000011000100001100010000110001000011000100001010001000101000100010100010001010001000000000100000000100001100010000110001000000000010000000010000110001000011000100001100010000110001000011000100001100010,INIT_10=256'b1000010100100001010010000101001000000010110000001011000101101100010110110000001011000000101100100000100010000010000110001000011000100001100010000110001000011000100001100010000110001000011000100010000001001000000100100000010010000001001000000100100000010010,INIT_11=256'b01000011000100001100010000110001000011000100001100010000110001000011000100001100010000110001000011000100001100010000110001000000010110000001011000101101100010110110000001011000000101100010100100001010010000000101100000010110001010010000101001000010100,INIT_12=256'b010001000001000100000100010000010001000001000100000100010000010000000101100000010110001011011000101101100000010110000001011000101001000010100100000001011000000101100010100100001010010001000001000100000100010000010001000001000000000100000000010000000001000,INIT_13=256'b01011000000101100010110110001011011000000101100000010110001010010000101001000000010110000001011000101001000010100100001010010000101001000010100100001010010000000101100000010110001011011000101101100000010110000001011000101001000010100100010000010001000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0110100101101001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011100000111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1110111011101110)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1110000011100000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1100010111000101)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1010110011001100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1110100000000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1100101011001010)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01111100000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011010100110101)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01100000101)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111100011111000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011010100000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111000000010001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111010100111111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011100000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111000001110111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1011101111110000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1010110010101100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1010001110100011)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1001100110011001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011101000111010)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111000010111011)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1100101000000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111111111110001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01000111110000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100000000000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0111011101110111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111111001111111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1001011010010110)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100010101010001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000000011111110)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b01011111101000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0111100001111000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100000000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100111101001111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0101100001011)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1001000000001001)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0110111101101111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b0100111111110100)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1000011110000111)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b011111101010000)' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4(LUTMASK=16'b1111001100000101)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2577): WARNING: input port 'WDATA[4]' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2616): WARNING: input port 'WDATA[9]' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2655): WARNING: input port 'WDATA[9]' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2694): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2703): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2706): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2717): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2720): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2723): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2726): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2728): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2731): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2739): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2742): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2745): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2751): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2753): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2755): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2758): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2761): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2764): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2767): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2770): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2776): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2790): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2793): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2796): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2799): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2811): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2814): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2823): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2826): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2829): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2832): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2835): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2838): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2841): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2847): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2852): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2855): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2858): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2864): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2867): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2870): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2873): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2876): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2879): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2885): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2888): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2893): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2896): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2899): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2902): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2905): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2908): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2911): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2914): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2917): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2920): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2926): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2976): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2982): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(2985): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3000): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3002): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3006): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3009): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3012): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3016): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3023): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3026): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3034): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3036): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3043): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3047): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3050): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3054): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3057): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3061): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3064): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3068): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3071): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3075): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3078): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3082): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3085): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3089): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3092): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3096): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3099): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3103): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3106): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3110): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3113): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3117): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3120): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3124): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3127): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3131): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3134): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3138): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3141): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3145): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3148): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3151): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3154): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3157): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3160): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3163): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3166): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3169): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3172): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3180): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3186): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3200): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3203): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3206): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3209): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3217): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3228): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3230): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3244): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3260): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3263): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3266): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3269): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3272): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3275): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3278): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3281): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3284): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3287): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3290): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3297): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3300): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3307): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3314): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3317): WARNING: input port 'I3' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3320): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3323): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3326): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v(3333): WARNING: input port 'I2' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(488): INFO: compiling module 'PRBS9ChkX4(RightCntWidth_C=27)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(751): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=27)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(751): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100001000)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(751): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100101100)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v(751): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=27,Alignment=9'b110011000)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/MIIDataBuff.v(18): INFO: compiling module 'MiiDataBuff(DataWidth_C=4,DataDepth_C=8)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(295): WARNING: port 'probe8' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(10): INFO: compiling module 'edb_top' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(576): INFO: compiling module 'edb_vio_top(NUM_PROBE_IN=2,NUM_PROBE_OUT=2,PROBE_OUT0_INIT_VAL=32'b0,PROBE_OUT1_INIT_VAL=32'b0)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(1133): INFO: compiling module 'vio_core(INT_WIDTH=2,OUT_WIDTH=2,PROBE_OUT_INIT_VAL=2'b0)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(369): INFO: compiling module 'adbg_crc32' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(1891): INFO: compiling module 'syncer' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(2066): INFO: compiling module 'edb_la_top(NUM_PROBES=8,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=2,PROBE2_WIDTH=3,PROBE5_WIDTH=4)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3908): INFO: compiling module 'compare_unit(WIDTH=11'b010,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4054): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4057): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4060): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4063): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3908): INFO: compiling module 'compare_unit(WIDTH=11'b01,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3908): INFO: compiling module 'compare_unit(WIDTH=11'b011,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4054): WARNING: expression size 3 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4057): WARNING: expression size 3 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4060): WARNING: expression size 3 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4063): WARNING: expression size 3 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3908): INFO: compiling module 'compare_unit(WIDTH=11'b0100,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4054): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4057): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4060): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4063): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(4123): INFO: compiling module 'trigger_unit(WIDTH=8,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3454): INFO: compiling module 'la_biu(CAPTURE_WIDTH=14,DATA_DEPTH=4096)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3338): INFO: compiling module 'fifo_with_read(DATA_WIDTH=14,ADDR_WIDTH=12)' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3373): WARNING: expression size 14 truncated to fit in target size 13 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(3382): WARNING: expression size 14 truncated to fit in target size 13 (VERI-1209)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(1973): INFO: compiling module 'simple_dual_port_ram(DATA_WIDTH=14,ADDR_WIDTH=12,RAM_INIT_FILE="")' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(2495): WARNING: net 'burst_write' does not have a driver (VDB-1002)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(2542): WARNING: net 'register_conn[2][63]' does not have a driver (VDB-1002)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(447): INFO: compiling module 'debug_hub' (VERI-1018)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v(267): WARNING: input port 'probe8[0]' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v(444): WARNING: actual bit length 4 differs from formal bit length 3 for port 'Mcst2MII_MiiTxData' (VERI-1330)
+INFO: Elaboration took 2.74469 seconds.
+INFO: 	Elaboration took 2.745 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 34.156 MB, end = 639.268 MB, delta = 605.112 MB
+INFO: 	Elaboration peak virtual memory usage = 659.372 MB
+INFO: Elaboration resident set memory usage: begin = 34.604 MB, end = 622.08 MB, delta = 587.476 MB
+INFO: 	Elaboration peak resident set memory usage = 639.536 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(45): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(59): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(75): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(95): INFO: compiling module 'EFX_MULT' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(130): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(367): INFO: compiling module 'RAMB5' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(429): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+INFO: Reading Mapping Library took 0.0102468 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 639.268 MB, end = 639.268 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 659.372 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 622.236 MB, end = 622.24 MB, delta = 0.004 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 639.536 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1140) Removing unconnected net : bscan_DRCK
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1142) Removing unconnected net : bscan_RUNTEST
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1143) Removing unconnected net : bscan_SEL
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1147) Removing unconnected net : bscan_TMS
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[44]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[43]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[42]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[41]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[40]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[39]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[38]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[37]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[36]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[35]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[34]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[33]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[32]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[31]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[30]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1154) Removing unconnected net : edb_user_dr[29]
+[EFX-0677 INFO] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 1988) Zero initialization of uninitialized memory block 'ram'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2495) Re-wiring to GND non-driven net 'burst_write'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][63]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][62]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][61]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][60]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][59]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][58]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][57]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][56]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v 2542) Re-wiring to GND non-driven net 'register_conn[2][55]'.
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in2[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in3[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in4[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in5[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in6[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in7[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in8[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in9[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in10[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in11[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in12[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in13[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in14[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in15[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in16[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in17[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in18[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in19[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in20[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in21[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in22[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in23[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in24[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in25[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in26[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in27[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in28[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in29[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in30[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in31[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in32[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in33[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in34[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in35[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in36[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in37[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in38[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in39[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in40[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in41[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in42[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in43[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in44[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in45[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in46[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in47[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in48[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in49[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in50[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in51[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in52[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in53[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in54[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in55[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in56[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in57[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in58[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in59[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in60[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in61[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in62[0]=0).
+[EFX-0266 WARNING] Module Instance 'DPLLTest' input pin tied to constant (probe_in63[0]=0).
+[EFX-0266 WARNING] Module Instance 'Mcst2MII' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'Mcst2MII' input pin tied to constant (trig_out_ack=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[2]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[14]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[2]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[14]=0).
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 1s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "Mcst2MIIDebug"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100001000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100001000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100101100)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100101100)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110011000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110011000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9GenX4" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9GenX4" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "McstTx" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "McstTx" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "McstRx" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "McstRx" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Mcst2MII" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Mcst2MII" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100001000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100001000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100101100)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100101100)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b110011000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=27,Alignment=9'b110011000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9ChkX4(RightCntWidth_C=27)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9ChkX4(RightCntWidth_C=27)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MiiDataBuff(DataWidth_C=4,DataDepth_C=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MiiDataBuff(DataWidth_C=4,DataDepth_C=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "syncer" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "syncer" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=2,OUT_WIDTH=2,PROBE_OUT_INIT_VAL=2'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=2,OUT_WIDTH=2,PROBE_OUT_INIT_VAL=2'b0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=2,NUM_PROBE_OUT=2,PROBE_OUT0_INIT_VAL=32'b0,PROBE_OUT1_INIT_VAL=32'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=2,NUM_PROBE_OUT=2,PROBE_OUT0_INIT_VAL=32'b0,PROBE_OUT1_INIT_VAL=32'b0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=8,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=8,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(DATA_WIDTH=14,ADDR_WIDTH=12,RAM_INIT_FILE="")" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: ram
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(DATA_WIDTH=14,ADDR_WIDTH=12,RAM_INIT_FILE="")" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=14,ADDR_WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=14,ADDR_WIDTH=12)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=14,DATA_DEPTH=4096)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=14,DATA_DEPTH=4096)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(NUM_PROBES=8,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=2,PROBE2_WIDTH=3,PROBE5_WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(NUM_PROBES=8,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=2,PROBE2_WIDTH=3,PROBE5_WIDTH=4)" end (Real time : 10s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Mcst2MIIDebug" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Mcst2MIIDebug" end (Real time : 3s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis begin
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 2096, ed: 7197, lv: 6
+[EFX-0000 INFO] ... LUT mapping end (Real time : 14s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 1s)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis end (Real time : 15s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 1s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port jtag_inst1_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_TMS is unconnected and will be removed
+WARNING: Input/Inout Port PllLocked[2] is unconnected and will be removed
+INFO: Found 4 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 2.78382 seconds.
+INFO: 	VDB Netlist Checker took 2.783 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 1516.33 MB, end = 1516.33 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 2086.72 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 1421.79 MB, end = 1421.88 MB, delta = 0.092 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 2017.22 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'Mcst2MIIDebug' to Verilog file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	427
+[EFX-0000 INFO] EFX_LUT4        : 	2295
+[EFX-0000 INFO] EFX_FF          : 	2343
+[EFX-0000 INFO] EFX_RAM_5K      : 	17
+[EFX-0000 INFO] EFX_GBUFCE      : 	4
+[EFX-0000 INFO] =============================== 
