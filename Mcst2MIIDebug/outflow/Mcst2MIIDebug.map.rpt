@@ -1,0 +1,1050 @@
+Synthesis report for project Mcst2MIIDebug
+Date : Feb 1 2020  21:47:46
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+Top-level Entity Name : Mcst2MIIDebug
+### ### File List (begin) ### ### ###
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Rx.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Manchester2MII.v (verilog_2k)
+C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/MIIDataBuff.v (verilog_2k)
+### ### File List (end) ### ### ###
+
+### ### Pre-optimizations and mapping (begin) ### ### ###
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/debug_top.v (1988)"
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i2
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i4
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i6
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i8
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i2
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i5
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i7
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_6/i2
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_6/i5
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_22/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_6/i7
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_6/i2
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_6/i6
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i3
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_6/i7
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U0_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i3
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i6
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_6/i8
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U1_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_6/i8
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U2_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_6/i3
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (819)" removed instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_6/i7
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/PRBS9.v (872)" representative instance : U0_PRBS9Chk/U3_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v (486)" removed instance : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoWrData[0]~FF
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v (371)" representative instance : dff_50/i1
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v (594)" removed instance : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoWrData[1]~FF
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v (371)" representative instance : dff_50/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v (603)" removed instance : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoWrData[2]~FF
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v (371)" representative instance : dff_50/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Source/Mcst2MII_Tx.v (621)" removed instance : U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoWrData[4]~FF
+@ "C:/Efinity/2019.3/project/Mcst2MIIDebug/../Debug/Mcst2MIIDebug.v (371)" representative instance : dff_50/i5
+
+Mapping success.
+### ### Mapping (end) ### ### ###
+
+### ### Post-optimizations and re-synthesis (begin) ### ### ###
+
+Post-optimizations and re-synthesis success.
+### ### Post-optimizations and re-synthesis (end) ### ### ###
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 105
+Enable signal <TxClkEn_2>, number of controlling flip flops: 43
+Enable signal <vcc>, number of controlling flip flops: 415
+Enable signal <n3630>, number of controlling flip flops: 1
+Enable signal <DegTxClkCnt[1]>, number of controlling flip flops: 2
+Enable signal <n3647>, number of controlling flip flops: 4
+Enable signal <n3671>, number of controlling flip flops: 36
+Enable signal <n3632>, number of controlling flip flops: 56
+Enable signal <n4383>, number of controlling flip flops: 27
+Enable signal <n4433>, number of controlling flip flops: 27
+Enable signal <n4482>, number of controlling flip flops: 27
+Enable signal <n4532>, number of controlling flip flops: 27
+Enable signal <n4575>, number of controlling flip flops: 3
+Enable signal <n4628>, number of controlling flip flops: 3
+Enable signal <n4637>, number of controlling flip flops: 5
+Enable signal <n4638>, number of controlling flip flops: 5
+Enable signal <n4644>, number of controlling flip flops: 3
+Enable signal <n4650>, number of controlling flip flops: 5
+Enable signal <n4651>, number of controlling flip flops: 5
+Enable signal <n4652>, number of controlling flip flops: 5
+Enable signal <n4653>, number of controlling flip flops: 5
+Enable signal <n4654>, number of controlling flip flops: 5
+Enable signal <n4655>, number of controlling flip flops: 5
+Enable signal <MiiRxCEn>, number of controlling flip flops: 5
+Enable signal <n4697>, number of controlling flip flops: 3
+Enable signal <n4704>, number of controlling flip flops: 4
+Enable signal <n4706>, number of controlling flip flops: 6
+Enable signal <n4709>, number of controlling flip flops: 16
+Enable signal <n4711>, number of controlling flip flops: 3
+Enable signal <n4714>, number of controlling flip flops: 2
+Enable signal <n4717>, number of controlling flip flops: 2
+Enable signal <edb_top_inst/DPLLTest/vio_core_inst/commit_sync2>, number of controlling flip flops: 2
+Enable signal <n4700>, number of controlling flip flops: 1
+Enable signal <n4784>, number of controlling flip flops: 32
+Enable signal <edb_top_inst/DPLLTest/vio_core_inst/hold_probe_in>, number of controlling flip flops: 2
+Enable signal <n4827>, number of controlling flip flops: 3
+Enable signal <n4829>, number of controlling flip flops: 19
+Enable signal <n4833>, number of controlling flip flops: 64
+Enable signal <n4835>, number of controlling flip flops: 27
+Enable signal <n4840>, number of controlling flip flops: 4
+Enable signal <n4842>, number of controlling flip flops: 6
+Enable signal <n4845>, number of controlling flip flops: 16
+Enable signal <n4847>, number of controlling flip flops: 64
+Enable signal <n4850>, number of controlling flip flops: 3
+Enable signal <n4852>, number of controlling flip flops: 64
+Enable signal <n4853>, number of controlling flip flops: 64
+Enable signal <n4854>, number of controlling flip flops: 3
+Enable signal <n4855>, number of controlling flip flops: 64
+Enable signal <n4856>, number of controlling flip flops: 64
+Enable signal <n4857>, number of controlling flip flops: 3
+Enable signal <n4858>, number of controlling flip flops: 64
+Enable signal <n4859>, number of controlling flip flops: 64
+Enable signal <n4860>, number of controlling flip flops: 3
+Enable signal <n4861>, number of controlling flip flops: 64
+Enable signal <n4862>, number of controlling flip flops: 64
+Enable signal <n4863>, number of controlling flip flops: 3
+Enable signal <n4864>, number of controlling flip flops: 64
+Enable signal <n4865>, number of controlling flip flops: 64
+Enable signal <n4866>, number of controlling flip flops: 3
+Enable signal <n4867>, number of controlling flip flops: 64
+Enable signal <n4868>, number of controlling flip flops: 64
+Enable signal <n4869>, number of controlling flip flops: 3
+Enable signal <n4870>, number of controlling flip flops: 64
+Enable signal <n4871>, number of controlling flip flops: 64
+Enable signal <n4872>, number of controlling flip flops: 3
+Enable signal <n4873>, number of controlling flip flops: 64
+Enable signal <n4874>, number of controlling flip flops: 64
+Enable signal <n4879>, number of controlling flip flops: 13
+Enable signal <n5060>, number of controlling flip flops: 32
+Enable signal <n5200>, number of controlling flip flops: 17
+Enable signal <n5206>, number of controlling flip flops: 14
+Enable signal <n5215>, number of controlling flip flops: 9
+Enable signal <n5227>, number of controlling flip flops: 2
+Enable signal <n5230>, number of controlling flip flops: 1
+Enable signal <n5256>, number of controlling flip flops: 13
+Enable signal <edb_top_inst/Mcst2MII/la_biu_inst/fifo_with_read_inst/we>, number of controlling flip flops: 13
+Enable signal <n5915>, number of controlling flip flops: 4
+Enable signal <n5918>, number of controlling flip flops: 82
+Enable signal <U2_Mcst2MII/U1_McstTx/n82_2>, number of controlling flip flops: 6
+Enable signal <U2_Mcst2MII/U1_McstTx/n91>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U1_McstTx/n98>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U1_McstTx/n99>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U1_McstTx/n104>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U1_McstTx/n105>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U1_McstTx/n107>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U1_McstTx/n130>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/RxNrzDAva[0]_2>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U2_McstRx/RxNibbEn_2>, number of controlling flip flops: 10
+Enable signal <U2_Mcst2MII/U2_McstRx/n401_2>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n405_2>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n414_2>, number of controlling flip flops: 4
+Enable signal <U2_Mcst2MII/U2_McstRx/n447>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/U2_McstDecode/U1_McstDelimit/RdAdjustEn>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n461>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/n465>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n502>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n572>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/n574_2>, number of controlling flip flops: 1
+Enable signal <U2_Mcst2MII/U2_McstRx/n585>, number of controlling flip flops: 8
+Enable signal <U2_Mcst2MII/U2_McstRx/n612>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/n618>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U2_McstRx/n623>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U2_McstRx/n628>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U2_McstRx/n630>, number of controlling flip flops: 5
+Enable signal <U2_Mcst2MII/U2_McstRx/n633>, number of controlling flip flops: 2
+Enable signal <U2_Mcst2MII/U2_McstRx/RxClkEn_2>, number of controlling flip flops: 5
+### ### EFX FF CE enables (end) ### ### ###
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[2](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[3](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[4](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[5](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[6](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[7](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[8](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[9](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[10](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[11](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[12](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[13](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[14](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_from_biu[15](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[8](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[9](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[10](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[11](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[12](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[13](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[14](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[15](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[16](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[17](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[18](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[19](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[20](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[21](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[22](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[23](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[24](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[25](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[26](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[27](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[28](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[29](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[30](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[31](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[32](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[33](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[34](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[35](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[36](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[37](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[38](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[39](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[40](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[41](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[42](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[43](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[44](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[45](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[46](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[47](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[48](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[49](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[50](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[51](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[52](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[53](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[54](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[55](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[56](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[57](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[58](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[59](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[60](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[61](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[62](=1)
+FF Output: edb_top_inst/Mcst2MII/data_from_biu[63](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[15](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[14](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[13](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[12](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[11](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[10](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[9](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[8](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[7](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[6](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[5](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[4](=1)
+FF Output: edb_top_inst/DPLLTest/vio_core_inst/data_out_shift_reg[3](=1)
+FF instance: U4_LoopBuff/FifoWrAddrCnt[3]~FF(unreachable)
+FF instance: U4_LoopBuff/FifoRdAddrCnt[3]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[0]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[2]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[3]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[4]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[5]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[6]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[7]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[8]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[9]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[10]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[11]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[12]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[13]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[14]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[15]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[16]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[17]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[18]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[19]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[20]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[21]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[22]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[23]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[24]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[25]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[26]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[27]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[28]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[29]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[30]~FF(unreachable)
+FF instance: edb_top_inst/DPLLTest/vio_core_inst/address_counter[31]~FF(unreachable)
+FF instance: edb_top_inst/Mcst2MII/address_counter[27]~FF(unreachable)
+FF instance: edb_top_inst/Mcst2MII/address_counter[28]~FF(unreachable)
+FF instance: edb_top_inst/Mcst2MII/address_counter[29]~FF(unreachable)
+FF instance: edb_top_inst/Mcst2MII/address_counter[30]~FF(unreachable)
+FF instance: edb_top_inst/Mcst2MII/address_counter[31]~FF(unreachable)
+FF instance: U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoWrAddrCnt[2]~FF(unreachable)
+FF instance: U2_Mcst2MII/U1_McstTx/U1_TxFifo/FifoRdAddrCnt[2]~FF(unreachable)
+FF instance: U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoWrAddrCnt[2]~FF(unreachable)
+FF instance: U2_Mcst2MII/U2_McstRx/U1_RxFifo/FifoRdAddrCnt[2]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs     MULTs
+------------------------------------------------------------         ---        ----        ----      ----     -----
+Mcst2MIIDebug:Mcst2MIIDebug                                    2343(128)    427(112)    2295(62)     17(0)      0(0)
++U1_PRBSGen:PRBS9GenX4                                             36(0)        0(0)       27(0)      0(0)      0(0)
+ +U0_PRBSGen:PRBS9Gen                                               9(9)        0(0)        5(5)      0(0)      0(0)
+ +U1_PRBSGen:PRBS9Gen(Alignment=9'b100001000)                       9(9)        0(0)        5(5)      0(0)      0(0)
+ +U2_PRBSGen:PRBS9Gen(Alignment=9'b100101100)                       9(9)        0(0)        8(8)      0(0)      0(0)
+ +U3_PRBSGen:PRBS9Gen(Alignment=9'b110011000)                       9(9)        0(0)        9(9)      0(0)      0(0)
++U2_Mcst2MII:Mcst2MII                                             266(6)       67(0)      245(3)      3(0)      0(0)
+ +U1_McstTx:McstTx                                                47(47)        0(0)      32(32)      0(0)      0(0)
+  +LUT__207:EFX_LUT4(LUTMASK=16'b1000100010001000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__208:EFX_LUT4(LUTMASK=16'b1000100011110000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__209:EFX_LUT4(LUTMASK=16'b0100010001000100)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__210:EFX_LUT4(LUTMASK=16'b01000100010001)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__211:EFX_LUT4(LUTMASK=16'b1000100011110000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__212:EFX_LUT4(LUTMASK=16'b1000100011110000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__213:EFX_LUT4(LUTMASK=16'b1000100010001000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__214:EFX_LUT4(LUTMASK=16'b011100001000)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__215:EFX_LUT4(LUTMASK=16'b01000100010001)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__216:EFX_LUT4(LUTMASK=16'b01010000010100)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__217:EFX_LUT4(LUTMASK=16'b1011101110111011)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__218:EFX_LUT4(LUTMASK=16'b0100000001000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__219:EFX_LUT4(LUTMASK=16'b01000000010000)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__220:EFX_LUT4(LUTMASK=16'b0100000001000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__221:EFX_LUT4(LUTMASK=16'b0100000001000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__222:EFX_LUT4(LUTMASK=16'b1000000010000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__223:EFX_LUT4(LUTMASK=16'b1011101110111011)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__224:EFX_LUT4(LUTMASK=16'b01000100010001)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__225:EFX_LUT4(LUTMASK=16'b0110011001100110)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__226:EFX_LUT4(LUTMASK=16'b0100000110000010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__227:EFX_LUT4(LUTMASK=16'b1001000010010000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__228:EFX_LUT4(LUTMASK=16'b1011111010111110)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__229:EFX_LUT4(LUTMASK=16'b011100001000)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__230:EFX_LUT4(LUTMASK=16'b1111000001000100)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__231:EFX_LUT4(LUTMASK=16'b01100000011000)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__232:EFX_LUT4(LUTMASK=16'b0101001101010011)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__233:EFX_LUT4(LUTMASK=16'b1011111010111110)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__272:EFX_LUT4(LUTMASK=16'b1100111110100000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__273:EFX_LUT4(LUTMASK=16'b1111110000001010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +CLKBUF__1:EFX_GBUFCE(CE_POLARITY=1'b1)                           0(0)        0(0)        0(0)      0(0)      0(0)
+  +CLKBUF__0:EFX_GBUFCE(CE_POLARITY=1'b1)                           0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__274:EFX_LUT4(LUTMASK=16'b1100111110100000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__275:EFX_LUT4(LUTMASK=16'b1111110000001010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__276:EFX_LUT4(LUTMASK=16'b1100111110100000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__277:EFX_LUT4(LUTMASK=16'b1111110000001010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__278:EFX_LUT4(LUTMASK=16'b1100111110100000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__279:EFX_LUT4(LUTMASK=16'b1111110000001010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__280:EFX_LUT4(LUTMASK=16'b1100111110100000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__281:EFX_LUT4(LUTMASK=16'b1111110000001010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+ +U2_McstRx:McstRx                                              213(213)      67(67)    210(210)      3(3)      0(0)
+  +LUT__1150:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b0,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_FF(CLK_POLARITY=1'b1,CE_POLARITY=1'b1,SR_POLARITY=...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b0,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b0)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b0,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i25:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i24:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i23:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i22:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i21:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i20:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i19:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i18:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i17:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i16:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i15:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i14:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i13:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i12:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i11:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i10:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)            0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i9:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i8:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i7:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i6:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i5:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i4:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i3:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i2:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +add_56/i1:EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b0)             0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_RAM_5K(READ_WIDTH=5,WRITE_WIDTH=5,INIT_0=256'b0100...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_RAM_5K(READ_WIDTH=10,WRITE_WIDTH=10,INIT_0=256'b01...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +EFX_RAM_5K(READ_WIDTH=10,WRITE_WIDTH=10,INIT_0=256'b01...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1151:EFX_LUT4(LUTMASK=16'b1000000010000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1152:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1153:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1154:EFX_LUT4(LUTMASK=16'b1000000010000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1155:EFX_LUT4(LUTMASK=16'b1000000010000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1156:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1157:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1158:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1159:EFX_LUT4(LUTMASK=16'b0110100101101001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1160:EFX_LUT4(LUTMASK=16'b1000000010000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1161:EFX_LUT4(LUTMASK=16'b011100000111)                     0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1162:EFX_LUT4(LUTMASK=16'b1110111011101110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1163:EFX_LUT4(LUTMASK=16'b1110000011100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1164:EFX_LUT4(LUTMASK=16'b1100010111000101)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1165:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1166:EFX_LUT4(LUTMASK=16'b1110100000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1167:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1168:EFX_LUT4(LUTMASK=16'b1110000011100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1169:EFX_LUT4(LUTMASK=16'b1110000011100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1170:EFX_LUT4(LUTMASK=16'b01111100000000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1171:EFX_LUT4(LUTMASK=16'b1110111011101110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1172:EFX_LUT4(LUTMASK=16'b0110011001100110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1173:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1174:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1175:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1176:EFX_LUT4(LUTMASK=16'b0101001101010011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1177:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1178:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1179:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1180:EFX_LUT4(LUTMASK=16'b1111100011111000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1181:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1182:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1183:EFX_LUT4(LUTMASK=16'b1111000000010001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1184:EFX_LUT4(LUTMASK=16'b01000100010001)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1185:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1186:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1187:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1188:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1189:EFX_LUT4(LUTMASK=16'b1111010100111111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1190:EFX_LUT4(LUTMASK=16'b011100000000)                     0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1191:EFX_LUT4(LUTMASK=16'b01000000010000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1192:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1193:EFX_LUT4(LUTMASK=16'b1111000001110111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1194:EFX_LUT4(LUTMASK=16'b1011101111110000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1195:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1196:EFX_LUT4(LUTMASK=16'b0101001101010011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1197:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1198:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1199:EFX_LUT4(LUTMASK=16'b1010001110100011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1200:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1201:EFX_LUT4(LUTMASK=16'b1001100110011001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1202:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1203:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1204:EFX_LUT4(LUTMASK=16'b0111)                             0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1205:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1206:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1207:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1208:EFX_LUT4(LUTMASK=16'b1111000010111011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1209:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1210:EFX_LUT4(LUTMASK=16'b0101001101010011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1211:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1212:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1213:EFX_LUT4(LUTMASK=16'b1010001110100011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1214:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1215:EFX_LUT4(LUTMASK=16'b1100101000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1216:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1217:EFX_LUT4(LUTMASK=16'b0100010001000100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1218:EFX_LUT4(LUTMASK=16'b1111111111110001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1219:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1220:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1221:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1222:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1223:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1224:EFX_LUT4(LUTMASK=16'b0101001101010011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1225:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1226:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1227:EFX_LUT4(LUTMASK=16'b1010001110100011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1228:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1229:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1230:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1231:EFX_LUT4(LUTMASK=16'b1111010100111111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1232:EFX_LUT4(LUTMASK=16'b011100000000)                     0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1233:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1234:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1235:EFX_LUT4(LUTMASK=16'b01000111110000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1236:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1237:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1238:EFX_LUT4(LUTMASK=16'b01000111110000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1239:EFX_LUT4(LUTMASK=16'b01100000101)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1240:EFX_LUT4(LUTMASK=16'b011010100000000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1241:EFX_LUT4(LUTMASK=16'b01000111110000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1242:EFX_LUT4(LUTMASK=16'b01)                               0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1243:EFX_LUT4(LUTMASK=16'b01)                               0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1244:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1245:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1246:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1247:EFX_LUT4(LUTMASK=16'b0100010001000100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1248:EFX_LUT4(LUTMASK=16'b0100000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1249:EFX_LUT4(LUTMASK=16'b0100000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1250:EFX_LUT4(LUTMASK=16'b1000000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1251:EFX_LUT4(LUTMASK=16'b0111011101110111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1252:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1253:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1254:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1255:EFX_LUT4(LUTMASK=16'b1100010111000101)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1256:EFX_LUT4(LUTMASK=16'b01000100010001)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1257:EFX_LUT4(LUTMASK=16'b1111111001111111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1258:EFX_LUT4(LUTMASK=16'b0100010001000100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1259:EFX_LUT4(LUTMASK=16'b1001011010010110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1260:EFX_LUT4(LUTMASK=16'b0100010101010001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1261:EFX_LUT4(LUTMASK=16'b1001100110011001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1262:EFX_LUT4(LUTMASK=16'b01000100010001)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1263:EFX_LUT4(LUTMASK=16'b0100000000000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1264:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1265:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1266:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1267:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1268:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1269:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1270:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1271:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1272:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1273:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1274:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1275:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1276:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1277:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1278:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1279:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1280:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1281:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1282:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1283:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1284:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1285:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1286:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1287:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1288:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1289:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1290:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1291:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1292:EFX_LUT4(LUTMASK=16'b011010100110101)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1293:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1294:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1295:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1296:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1297:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1298:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1299:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1300:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1301:EFX_LUT4(LUTMASK=16'b0110100101101001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1302:EFX_LUT4(LUTMASK=16'b1010110010101100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1303:EFX_LUT4(LUTMASK=16'b1000000011111110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1304:EFX_LUT4(LUTMASK=16'b0100010001000100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1305:EFX_LUT4(LUTMASK=16'b01011111101000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1306:EFX_LUT4(LUTMASK=16'b011101000111010)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1307:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1308:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1309:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1310:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1311:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1312:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1313:EFX_LUT4(LUTMASK=16'b1100101011001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1314:EFX_LUT4(LUTMASK=16'b1110111011101110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1315:EFX_LUT4(LUTMASK=16'b01111100000000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1316:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1317:EFX_LUT4(LUTMASK=16'b0111100001111000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1318:EFX_LUT4(LUTMASK=16'b0100000000)                       0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1319:EFX_LUT4(LUTMASK=16'b01)                               0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1320:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1321:EFX_LUT4(LUTMASK=16'b0100010001000100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1322:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1323:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1324:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1325:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1326:EFX_LUT4(LUTMASK=16'b1100010111000101)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1327:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1328:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1329:EFX_LUT4(LUTMASK=16'b1010110011001100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1330:EFX_LUT4(LUTMASK=16'b011100001000)                     0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1331:EFX_LUT4(LUTMASK=16'b01000100010001)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1332:EFX_LUT4(LUTMASK=16'b01010000010100)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1333:EFX_LUT4(LUTMASK=16'b1011101110111011)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1334:EFX_LUT4(LUTMASK=16'b0100000001000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1335:EFX_LUT4(LUTMASK=16'b01000000010000)                   0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1336:EFX_LUT4(LUTMASK=16'b0100000001000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1337:EFX_LUT4(LUTMASK=16'b0100000001000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1338:EFX_LUT4(LUTMASK=16'b1000000010000000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1339:EFX_LUT4(LUTMASK=16'b0100111101001111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1340:EFX_LUT4(LUTMASK=16'b0101100001011)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1341:EFX_LUT4(LUTMASK=16'b0110011001100110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1342:EFX_LUT4(LUTMASK=16'b0100000110000010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1343:EFX_LUT4(LUTMASK=16'b1001000010010000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1344:EFX_LUT4(LUTMASK=16'b0110011001100110)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1345:EFX_LUT4(LUTMASK=16'b1001000000001001)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1346:EFX_LUT4(LUTMASK=16'b0110111101101111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1347:EFX_LUT4(LUTMASK=16'b0100111111110100)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1348:EFX_LUT4(LUTMASK=16'b1000011110000111)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1349:EFX_LUT4(LUTMASK=16'b0101100001011)                    0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1350:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1351:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1352:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1620:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1149:EFX_LUT4(LUTMASK=16'b1000100010001000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1621:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +CLKBUF__1:EFX_GBUFCE(CE_POLARITY=1'b1)                           0(0)        0(0)        0(0)      0(0)      0(0)
+  +CLKBUF__0:EFX_GBUFCE(CE_POLARITY=1'b1)                           0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+              +EFX_ADD(I0_POLARITY=1'b1,I1_POLARITY=1'b1)...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1622:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1623:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1624:EFX_LUT4(LUTMASK=16'b011111101010000)                  0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1625:EFX_LUT4(LUTMASK=16'b1111001100000101)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1626:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1627:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1628:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1629:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1630:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1631:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1632:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1633:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1634:EFX_LUT4(LUTMASK=16'b1100111110100000)                 0(0)        0(0)        0(0)      0(0)      0(0)
+  +LUT__1635:EFX_LUT4(LUTMASK=16'b1111110000001010)                 0(0)        0(0)        0(0)      0(0)      0(0)
++U0_PRBS9Chk:PRBS9ChkX4(RightCntWidth_C=27)                       170(2)      104(0)      198(2)      0(0)      0(0)
+ +U0_PRBS9Chk:PRBS9Chk(RightCntWidth_C=27)                        41(41)      26(26)      47(47)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100001000)...      41(41)      26(26)      47(47)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=27,Alignment=9'b100101100)...      43(43)      26(26)      52(52)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=27,Alignment=9'b110011000)...      43(43)      26(26)      50(50)      0(0)      0(0)
++U4_LoopBuff:MiiDataBuff(DataWidth_C=4,DataDepth_C=8)             61(61)        4(4)      42(42)      0(0)      0(0)
++edb_top_inst:edb_top                                            1682(0)      140(0)     1721(0)     14(0)      0(0)
+ +edb_vio_top(NUM_PROBE_IN=2,NUM_PROBE_OUT=2,PROBE_OUT0_I...       83(0)       23(0)      160(0)      0(0)      0(0)
+  +vio_core(INT_WIDTH=2,OUT_WIDTH=2,PROBE_OUT_INIT_VAL=2'...      83(45)      23(23)    160(106)      0(0)      0(0)
+   +axi_crc_i:adbg_crc32                                          32(32)        0(0)      54(54)      0(0)      0(0)
+   +gen_probe_in_sync[0].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[1].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+ +edb_la_top(NUM_PROBES=8,DATA_DEPTH=4096,INPUT_PIPE_STAG...  1513(1325)     112(60)  1530(1301)     14(0)      0(0)
+  +axi_crc_i:adbg_crc32                                           32(32)        0(0)      55(55)      0(0)      0(0)
+                      +compare_unit(WIDTH=11'b010,PIPE=1)...        9(9)        0(0)      12(12)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        7(7)        0(0)        9(9)      0(0)      0(0)
+                      +compare_unit(WIDTH=11'b011,PIPE=1)...      11(11)        0(0)      14(14)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        7(7)        0(0)        8(8)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        7(7)        0(0)        8(8)      0(0)      0(0)
+                     +compare_unit(WIDTH=11'b0100,PIPE=1)...      13(13)        0(0)      17(17)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        7(7)        0(0)        8(8)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        9(9)        0(0)        8(8)      0(0)      0(0)
+  +trigger_unit_inst:trigger_unit(WIDTH=8,PIPE=1)                   1(1)        0(0)        2(2)      0(0)      0(0)
+  +la_biu_inst:la_biu(CAPTURE_WIDTH=14,DATA_DEPTH=4096)           85(59)      52(16)      88(64)     14(0)      0(0)
+             +fifo_with_read(DATA_WIDTH=14,ADDR_WIDTH=12)...      26(26)      36(36)      24(24)     14(0)      0(0)
+    +simple_dual_port_ram(DATA_WIDTH=14,ADDR_WIDTH=12,RAM...        0(0)        0(0)        0(0)    14(14)      0(0)
+ +debug_hub_inst:debug_hub                                        86(86)        5(5)      31(31)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+          Clock     Flip-Flops   Memory Ports    Multipliers
+          -----     ----------   ------------    -----------
+         SysClk            436              0              0
+      TxMcstClk             50              0              0
+      RxMcstClk            378             31              0
+ jtag_inst1_TCK           1479              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20F256
+project : Mcst2MIIDebug
+root : Mcst2MIIDebug
+I : C:/Efinity/2019.3/project/Mcst2MIIDebug
+output-dir : C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow
+work-dir : C:/Efinity/2019.3/project/Mcst2MIIDebug/work_syn
+write-efx-verilog : C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.map.v
+binary-db : C:/Efinity/2019.3/project/Mcst2MIIDebug/Mcst2MIIDebug.vdb
+insert-ios : 0
+num_mult18 : -1
+num_ram_5k : -1
+syn_options : mode=speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	24
+OUTPUT PORTS    : 	17
+
+EFX_ADD         : 	427
+EFX_LUT4        : 	2295
+   1-2  Inputs  : 	425
+   3    Inputs  : 	495
+   4    Inputs  : 	1375
+EFX_FF          : 	2343
+EFX_RAM_5K      : 	17
+EFX_GBUFCE      : 	4
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 32s
+Elapsed synthesis time : 40s
