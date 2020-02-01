@@ -1,0 +1,127 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Compiled: Jan 16 2020.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F256" ...
+
+***** Beginning stage routing graph generation ... *****
+Finished parsing ipin pattern file 'C:/Efinity/2019.3/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file 'C:/Efinity/2019.3/arch/.\sb_connectivity_subset.xdb'.
+Generated 1170301 RR nodes and 4442663 RR edges
+This design has 0 global control net(s). See C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow\Mcst2MIIDebug.route.rpt for details.
+Routing graph took 5.78034 seconds.
+	Routing graph took 5.781 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 131.356 MB, end = 508.112 MB, delta = 376.756 MB
+	Routing graph peak virtual memory usage = 557.356 MB
+Routing graph resident set memory usage: begin = 134.308 MB, end = 502.52 MB, delta = 368.212 MB
+	Routing graph peak resident set memory usage = 551.628 MB
+***** Ending stage routing graph generation *****
+***** Beginning stage routing ... *****
+WARNING(1): There are 1479 pins with no clock driven by root clock: jtag_inst1_TCK
+Peak routing utilization for Horizontal Left: 0.310103 at (55,12)
+Peak routing utilization for Horizontal Right: 0.284060 at (77,29)
+Peak routing utilization for Vertical Down: 0.384728 at (78,71)
+Peak routing utilization for Vertical Up: 0.403649 at (70,61)
+Peak routing congestion: 0.219618 at (74,67)
+V Congestion RMS: 0.078219 STDEV: 0.047280
+H Congestion RMS: 0.059962 STDEV: 0.034097
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+Routed wire in iteration 1: 414700
+Delay frac statistics: min = 0.270967 max = 1.947348 average = 0.640070
+         1        16424              3.203               2.96
+Routed wire in iteration 2: 293549
+         2         1498              2.446               2.42
+Routed wire in iteration 3: 304436
+         3          503              2.446               1.28
+Routed wire in iteration 4: 308279
+         4          155              2.446              0.737
+Routed wire in iteration 5: 308852
+         5           68              2.446              0.438
+Routed wire in iteration 6: 308946
+         6           42              2.446              0.374
+Routed wire in iteration 7: 309402
+         7           25              2.446              0.352
+Routed wire in iteration 8: 309522
+         8           17              2.446              0.358
+Routed wire in iteration 9: 309557
+         9            2              2.446               0.35
+Routed wire in iteration 10: 309762
+        10            4              2.446               0.36
+Routed wire in iteration 11: 309694
+        11            0              2.446              0.375
+
+Successfully routed netlist after 11 routing iterations and 37696776 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+Serial number (magic cookie) for the routing is: 154093087
+Netlist fully routed.
+
+Successfully created FPGA route file 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.route'
+Routing took 10.6733 seconds.
+	Routing took 10.673 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 509.024 MB, end = 555.332 MB, delta = 46.308 MB
+	Routing peak virtual memory usage = 647.56 MB
+Routing resident set memory usage: begin = 503.664 MB, end = 550.504 MB, delta = 46.84 MB
+	Routing peak resident set memory usage = 627.428 MB
+***** Ending stage routing *****
+***** Beginning stage final timing analysis ... *****
+WARNING(2): There are 1479 pins with no clock driven by root clock: jtag_inst1_TCK
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+SysClk              6.202         161.250     (R-R)
+TxMcstClk           3.314         301.720     (R-R)
+RxMcstClk           6.152         162.552     (R-R)
+
+Geomean max period: 5.019
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+SysClk           SysClk                5.000        -1.202     (R-R)
+SysClk           TxMcstClk             2.500         0.014     (R-R)
+SysClk           RxMcstClk             2.500         0.150     (R-R)
+TxMcstClk        SysClk                2.500         1.177     (R-R)
+TxMcstClk        TxMcstClk             2.500        -0.814     (R-R)
+TxMcstClk        RxMcstClk             2.500         0.718     (R-R)
+RxMcstClk        SysClk                2.500        -0.066     (R-R)
+RxMcstClk        RxMcstClk             2.500        -3.652     (R-R)
+
+
+WARNING(3): There are 1479 pins with no clock driven by root clock: jtag_inst1_TCK
+final timing analysis took 0.599 seconds.
+	final timing analysis took 0.6 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 554.18 MB, end = 560.34 MB, delta = 6.16 MB
+	final timing analysis peak virtual memory usage = 647.56 MB
+final timing analysis resident set memory usage: begin = 549.356 MB, end = 555.816 MB, delta = 6.46 MB
+	final timing analysis peak resident set memory usage = 627.428 MB
+***** Ending stage final timing analysis *****
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2019.3/project/Mcst2MIIDebug/outflow/Mcst2MIIDebug.interface.csv".
+Finished writing bitstream file C:/Efinity/2019.3/project/Mcst2MIIDebug/work_pnr\Mcst2MIIDebug.lbf.
+Bitstream generation took 0.534098 seconds.
+	Bitstream generation took 0.533 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 560.34 MB, end = 579.576 MB, delta = 19.236 MB
+	Bitstream generation peak virtual memory usage = 647.56 MB
+Bitstream generation resident set memory usage: begin = 555.824 MB, end = 574.268 MB, delta = 18.444 MB
+	Bitstream generation peak resident set memory usage = 627.428 MB
+***** Ending stage bitstream generation *****
+The entire flow of EFX_PNR took 43.0479 seconds.
+	The entire flow of EFX_PNR took 43.048 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 5.112 MB, end = 92.228 MB, delta = 87.116 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 647.56 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 9.036 MB, end = 96.732 MB, delta = 87.696 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 627.428 MB
