@@ -1,0 +1,36 @@
+clock {
+  name: "SysClk"
+  period: 5000
+  target_pin {
+    cell: "SysClk"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 120
+  }
+}
+clock {
+  name: "TxMcstClk"
+  period: 2500
+  target_pin {
+    cell: "TxMcstClk"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 120
+  }
+}
+clock {
+  name: "RxMcstClk"
+  period: 2500
+  target_pin {
+    cell: "RxMcstClk"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 120
+  }
+}
