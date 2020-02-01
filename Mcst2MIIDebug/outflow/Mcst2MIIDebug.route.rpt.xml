@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="TChina Standard Time" project="Mcst2MIIDebug" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
+
+  <efx:group name="Core Resource">
+    <efx:group_data name="Inputs" severity="info" value="25 / 470"/>
+    <efx:group_data name="Outputs" severity="info" value="17 / 595"/>
+    <efx:group_data name="Clocks" severity="info" value="9 / 16"/>
+    <efx:group_data name="Logic Elements" severity="info" value="4322 / 19728"/>
+    <efx:group_data name="Memory Blocks" severity="info" value="17 / 204"/>
+    <efx:group_data name="Multipliers" severity="info" value="0 / 36"/>
+  </efx:group>
+
+  <efx:group name="System Resource">
+    <efx:group_data info="runtime" name="packing" severity="info" value="0|0:0:2"/>
+    <efx:group_data info="runtime" name="placement" severity="info" value="0|0:0:18"/>
+    <efx:group_data info="runtime" name="routing" severity="info" value="0|0:0:10"/>
+    <efx:group_data info="peak_rr" name="Peak RSS" severity="info" value="627.428 MB"/>
+  </efx:group>
+
+  <efx:group name="Interface">
+    <efx:group_data name="Missing Interface Pins" severity="info" value="17"/>
+    <efx:group_data name="Unassigned Core Pins" severity="info" value="0"/>
+  </efx:group>
+
+  <efx:group name="Timing">
+    <efx:group_data name="Least Slack" severity="info" value="-3.652 ns"/>
+    <efx:group_data name="SysClk" severity="info" value="161.250 MHz"/>
+    <efx:group_data name="TxMcstClk" severity="info" value="301.720 MHz"/>
+    <efx:group_data name="RxMcstClk" severity="info" value="162.552 MHz"/>
+  </efx:group>
+
+</efx:tool_report>
