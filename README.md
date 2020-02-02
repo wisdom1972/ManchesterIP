@@ -4,6 +4,11 @@
 
 > 项目的目的：
 
+> 在工业控制的领域， PLC， Servo接口， 多模块链接， 都要求数字输入输出模块之间需要有快速可靠抗干扰性强的链接方案， EtherCAT的模块之间链接也是采用这种方式，
+
+> **Efinix的ManchesterIP将过去EtherCAT的应用中的数字链路有效提高到100M信号带宽， 可以使中国国产的PLC如果使用该链路， 实时响应的带宽将与日本基恩士公司的高速魔铠之间的接口有同样速度的响应速度**
+
+
 你可以通过这个项目， 来快速了解如何使用Efinix FPGA的LVDS， PLL，以及伪随机编码构建一个Manchester 接口的PHY
 
 
@@ -111,12 +116,12 @@ Other features :
 
 ## Hardware  
 
-- 项目使用T20F256EVB作为测试硬件环境
+- 项目使用T20F256EVB作为测试硬件环境，其中LVDS的收发端子以及LED作为PHY和状态运行显示
 
 - The Project is based on Efinix T20F256 EVB, its main features is as follows:  
 -- The Trion T20 BGA256 development board features:  
 -- T20 FPGA  
--- 8 user LEDs  
+-- **8 user LEDs**  
 -- 3 user pushbutton switches, 3 user DIP switches  
 -- Micro-USB port  
 -- SPI and JTAG headers to facilitate configuration  
@@ -134,23 +139,28 @@ Other features :
 
 ## ManchesterIP LVDS Rx and Tx 连接以及LED指示灯的位置
 
-![LVDS line and LED blinking](./LVDS_line_LED.jpg)
+![LVDS line and LED blinking](./LVDS_line_LED.jpg)  
+
+- __运行超过48个小时没有误码__
+## Project install
 
 
-## Project name
-
-
-- STEP1: install Efinity 2018.4 or other advanced version in Win or Ubuntu
+- STEP1: install Efinity 2019.2 or other advanced version in Win or Ubuntu
 - STEP2: get ready of the T20F256EVB,  
    - if you have same EVB with Efinix engieers, with the other words, it is easy to find the issue with same two boards when you need tech support.
 
-- STEP3: download the total repository directory into Efinity project directory, for examples, C:\Efinity\2018.4\project\ram_pll_test
+- STEP3: download the total repository directory into Efinity project directory, for examples, C:\Efinity\2018.4\project\
+-- debug  
+-- Source  
+-- Mcst2MIIDebug
 
-- STEP4: open the Efinity project with the ram_pll.xml
 
-- STEP5: download the FPGA design hex into FPGA, it is all set
+- STEP4: open the Efinity project with the Mcst2MIIDebug/Mcst2MIIDebug.xml
 
-- you can study how to use the Efinity RAM and PLL when you want to transfer your previous project that based on other vendor FPGA
+- STEP5: compiler it, then download the FPGA design hex into FPGA, it is all set
+
+- you can study how to use the Efinity **PLL, LVDS, GPIOs, PRBS** with the projects
+
 
 ## Project Verilog file directory
 
@@ -160,6 +170,12 @@ Other features :
 
 Efinity的工程文件在 Mcst2MIIDebug
 
+## Manchester IP 使用设计说明文档
+
+- 曼切斯特编解码器方案介绍.pdf
+- 设计原理
+- 性能评测
+- IP参数配置
 
 ## Update
 
