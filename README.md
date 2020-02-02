@@ -141,7 +141,7 @@ Other features :
 
 ![LVDS line and LED blinking](./LVDS_line_LED.jpg)  
 
-- __运行超过48个小时没有误码__
+- __运行超过72个小时没有误码__
 ## Project install
 
 
