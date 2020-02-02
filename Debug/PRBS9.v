@@ -1,23 +1,23 @@
 
-`timescale 1ns/1ps                                                
-                                                            
+`timescale 1ns/1ps
+
 
 ///////////////////////////////////////////////////////////
 /**********************************************************
-	¹¦ÄÜÃèÊö£º
-	
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º
-	ÏêÏ¸Éè¼Æ·½°¸ÎÄ¼ş±àºÅ£º
-	·ÂÕæÎÄ¼şÃû£º
-	
-	±àÖÆ£ºÖìÈÊ²ı
-	´´½¨ÈÕÆÚ£º 2019-6-28
-	°æ±¾£ºV1¡¢0
-	ĞŞ¸Ä¼ÇÂ¼£º
+åŠŸèƒ½æè¿°ï¼š
+
+é‡è¦è¾“å…¥ä¿¡å·è¦æ±‚ï¼š
+è¯¦ç»†è®¾è®¡æ–¹æ¡ˆæ–‡ä»¶ç¼–å·ï¼š
+ä»¿çœŸæ–‡ä»¶åï¼š
+
+ç¼–åˆ¶ï¼šæœ±ä»æ˜Œ
+åˆ›å»ºæ—¥æœŸï¼š 2019-6-28
+ç‰ˆæœ¬ï¼šV1ã€0
+ä¿®æ”¹è®°å½•ï¼š
 **********************************************************/
 
 module PRBS9GenX8
-(   
+(
 	//System Signal
 	SysClk,		//(I)System Clock
 	Reset_N,	//(I)System Reset
@@ -28,43 +28,43 @@ module PRBS9GenX8
 
  	//Define  Parameter
 	/////////////////////////////////////////////////////////
-	parameter		TCo_C   		= 1;    
-		
-	localparam	Alignment0 = 9'b1_000_100_00;	//1041£¬X9+X5+1
+	parameter		TCo_C   		= 1;
+
+	localparam	Alignment0 = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
 	localparam	Alignment1 = 9'b1_000_010_00;	//1021
 	localparam	Alignment2 = 9'b1_001_011_00; 	//1131
 	localparam	Alignment3 = 9'b1_100_110_00;	//1461
 	localparam	Alignment4 = 9'b1_100_010_01;	//1423
-	localparam	Alignment5 = 9'b1_000_101_10; 	//1055	    
+	localparam	Alignment5 = 9'b1_000_101_10; 	//1055
 	localparam	Alignment6 = 9'b1_001_110_11; 	//1167
 	localparam	Alignment7 = 9'b1_101_100_00;	//1541
-	
+
 	/////////////////////////////////////////////////////////
-	
+
 	//Define Port
 	/////////////////////////////////////////////////////////
 	//System Signal
-	input 				SysClk;				//ÏµÍ³Ê±ÖÓ
-	input					Reset_N;			//ÏµÍ³¸´Î»
-	
+	input 				SysClk;				// system Clock
+	input					Reset_N;			// system Reset
+
 	/////////////////////////////////////////////////////////
 	// Signal Define
-	input		  		ClkEn  ;	
+	input		  		ClkEn  ;
 	output	[7:0]	DataOut;
-	
+
 	/////////////////////////////////////////////////////////
-	
-		
+
+
 	//1111111111111111111111111111111111111111111111111111111
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/ 
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	wire	[7:0]  DataOut;
-		
+
 	PRBS9Gen	#	(	.Alignment (Alignment0))
-	U0_PRBSGen	
+	U0_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -73,9 +73,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[0])	//Data Output
 	);
-		
+
 	PRBS9Gen	#	(	.Alignment (Alignment1))
-	U1_PRBSGen	
+	U1_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -84,9 +84,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[1])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment2))
-	U2_PRBSGen	
+	U2_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -95,9 +95,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[2])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment3))
-	U3_PRBSGen	
+	U3_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -106,9 +106,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[3])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment4))
-	U4_PRBSGen	
+	U4_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -117,9 +117,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[4])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment5))
-	U5_PRBSGen	
+	U5_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -128,9 +128,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[5])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment6))
-	U6_PRBSGen	
+	U6_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -139,9 +139,9 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[6])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment7))
-	U7_PRBSGen	
+	U7_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -150,27 +150,27 @@ module PRBS9GenX8
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[7])	//Data Output
 	);
-	
+
 	//1111111111111111111111111111111111111111111111111111111
-	
-	
-	
-	
-endmodule 
-	
-		
+
+
+
+
+endmodule
+
+
 ///////////////////////////////////////////////////////////
 /**********************************************************
-	¹¦ÄÜÃèÊö£º
-	
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º
-	ÏêÏ¸Éè¼Æ·½°¸ÎÄ¼ş±àºÅ£º
-	·ÂÕæÎÄ¼şÃû£º
-	
-	±àÖÆ£ºÖìÈÊ²ı
-	´´½¨ÈÕÆÚ£º 2019-6-28
-	°æ±¾£ºV1¡¢0
-	ĞŞ¸Ä¼ÇÂ¼£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½Òªï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Å£ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½Ê²ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ 2019-6-28
+	ï¿½æ±¾ï¿½ï¿½V1ï¿½ï¿½0
+	ï¿½Ş¸Ä¼ï¿½Â¼ï¿½ï¿½
 **********************************************************/
 
 module PRBS9ChkX8
@@ -187,43 +187,43 @@ module PRBS9ChkX8
 
  	//Define  Parameter
 	/////////////////////////////////////////////////////////
-	parameter		TCo_C   		= 1;    
-		
+	parameter		TCo_C   		= 1;
+
 	parameter RightCntWidth_C = 20;
-	
-	localparam	Alignment0 = 9'b1_000_100_00;	//1041£¬X9+X5+1
+
+	localparam	Alignment0 = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
 	localparam	Alignment1 = 9'b1_000_010_00;	//1021
 	localparam	Alignment2 = 9'b1_001_011_00; //1131
 	localparam	Alignment3 = 9'b1_100_110_00;	//1461
 	localparam	Alignment4 = 9'b1_100_010_01;	//1423
-	localparam	Alignment5 = 9'b1_000_101_10; //1055	    
+	localparam	Alignment5 = 9'b1_000_101_10; //1055
 	localparam	Alignment6 = 9'b1_001_110_11; //1167
 	localparam	Alignment7 = 9'b1_101_100_00;	//1541
-	
+
 	/////////////////////////////////////////////////////////
-	
+
 	//Define Port
 	/////////////////////////////////////////////////////////
 	//System Signal
-	input 				SysClk;				//ÏµÍ³Ê±ÖÓ
-	input					Reset_N;			//ÏµÍ³¸´Î»
-	
+	input 				SysClk;				//ÏµÍ³Ê±ï¿½ï¿½
+	input					Reset_N;			//ÏµÍ³ï¿½ï¿½Î»
+
 	/////////////////////////////////////////////////////////
 	// Signal Define
 	input	[7:0]	DataIn  ;	//(I)Data Input
 	input				ClkEn   ;	//(I)Clock Enable
 	output 			Error   ;	//(O)Data Error
 	output 			Right		;	//(O)Data Right
-	
+
 	//1111111111111111111111111111111111111111111111111111111
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/ 
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	wire	[7:0]	RxError;
 	wire	[7:0]	RxRight;
-	
+
 	PRBS9Chk # (.Alignment			(Alignment0),
 							.RightCntWidth_C(RightCntWidth_C))
 	U0_PRBS9Chk
@@ -237,7 +237,7 @@ module PRBS9ChkX8
 		.Error 	(RxError[0]),	//(O)Data Error
 		.Right	(RxRight[0]) 	//(O)Data Right
 	);
-	
+
 	PRBS9Chk # (.Alignment			(Alignment1),
 							.RightCntWidth_C(RightCntWidth_C))
 	U1_PRBS9Chk
@@ -329,51 +329,51 @@ module PRBS9ChkX8
 		.Error 	(RxError[7]),	//(O)Data Error
 		.Right	(RxRight[7]) 	//(O)Data Right
 	);
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/    
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	reg 	Error   ;	//(O)Data Error
 	reg 	Right		;	//(O)Data Right
-	
+
 	always @( posedge SysClk or negedge Reset_N)
 	begin
 		if (!Reset_N)
 		begin
-			Error   <= # TCo_C 1'h0;	
-			Right		<= # TCo_C 1'h0;		
+			Error   <= # TCo_C 1'h0;
+			Right		<= # TCo_C 1'h0;
 		end
 		else
 		begin
-			Error   <= # TCo_C |RxError;	
-			Right		<= # TCo_C &RxRight;		
+			Error   <= # TCo_C |RxError;
+			Right		<= # TCo_C &RxRight;
 		end
 	end
-				
+
 	//1111111111111111111111111111111111111111111111111111111
-	
-	
-	
+
+
+
 endmodule
-		                                                            
-                                                            
+
+
 ///////////////////////////////////////////////////////////
 /**********************************************************
-	¹¦ÄÜÃèÊö£º
-	
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º
-	ÏêÏ¸Éè¼Æ·½°¸ÎÄ¼ş±àºÅ£º
-	·ÂÕæÎÄ¼şÃû£º
-	
-	±àÖÆ£ºÖìÈÊ²ı
-	´´½¨ÈÕÆÚ£º 2019-6-28
-	°æ±¾£ºV1¡¢0
-	ĞŞ¸Ä¼ÇÂ¼£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½Òªï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Å£ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½Ê²ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ 2019-6-28
+	ï¿½æ±¾ï¿½ï¿½V1ï¿½ï¿½0
+	ï¿½Ş¸Ä¼ï¿½Â¼ï¿½ï¿½
 **********************************************************/
 
 module PRBS9GenX4
-(   
+(
 	//System Signal
 	SysClk,		//(I)System Clock
 	Reset_N,	//(I)System Reset
@@ -384,43 +384,43 @@ module PRBS9GenX4
 
  	//Define  Parameter
 	/////////////////////////////////////////////////////////
-	parameter		TCo_C   		= 1;    
-		
-	localparam	Alignment0 = 9'b1_000_100_00;	//1041£¬X9+X5+1
+	parameter		TCo_C   		= 1;
+
+	localparam	Alignment0 = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
 	localparam	Alignment1 = 9'b1_000_010_00;	//1021
 	localparam	Alignment2 = 9'b1_001_011_00; 	//1131
 	localparam	Alignment3 = 9'b1_100_110_00;	//1461
 //	localparam	Alignment4 = 9'b1_100_010_01;	//1423
-//	localparam	Alignment5 = 9'b1_000_101_10; 	//1055	    
+//	localparam	Alignment5 = 9'b1_000_101_10; 	//1055
 //	localparam	Alignment6 = 9'b1_001_110_11; 	//1167
 //	localparam	Alignment7 = 9'b1_101_100_00;	//1541
-	
+
 	/////////////////////////////////////////////////////////
-	
+
 	//Define Port
 	/////////////////////////////////////////////////////////
 	//System Signal
-	input 				SysClk;				//ÏµÍ³Ê±ÖÓ
-	input					Reset_N;			//ÏµÍ³¸´Î»
-	
+	input 				SysClk;				//ÏµÍ³Ê±ï¿½ï¿½
+	input					Reset_N;			//ÏµÍ³ï¿½ï¿½Î»
+
 	/////////////////////////////////////////////////////////
 	// Signal Define
-	input		  		ClkEn  ;	
+	input		  		ClkEn  ;
 	output	[3:0]	DataOut;
-	
+
 	/////////////////////////////////////////////////////////
-	
-		
+
+
 	//1111111111111111111111111111111111111111111111111111111
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/ 
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	wire	[3:0]  DataOut;
-		
+
 	PRBS9Gen	#	(	.Alignment (Alignment0))
-	U0_PRBSGen	
+	U0_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -429,9 +429,9 @@ module PRBS9GenX4
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[0])	//Data Output
 	);
-		
+
 	PRBS9Gen	#	(	.Alignment (Alignment1))
-	U1_PRBSGen	
+	U1_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -440,9 +440,9 @@ module PRBS9GenX4
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[1])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment2))
-	U2_PRBSGen	
+	U2_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -451,9 +451,9 @@ module PRBS9GenX4
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[2])	//Data Output
 	);
-	
+
 	PRBS9Gen	#	(	.Alignment (Alignment3))
-	U3_PRBSGen	
+	U3_PRBSGen
 	(
 		//System Signal
 		.SysClk		(SysClk		),	//System Clock
@@ -462,27 +462,27 @@ module PRBS9GenX4
 		.ClkEn		(ClkEn		),	//Clock Enable
 		.DataOut	(DataOut[3])	//Data Output
 	);
-	
+
 	//1111111111111111111111111111111111111111111111111111111
-	
-	
-	
-	
-endmodule 
-	
-		
+
+
+
+
+endmodule
+
+
 ///////////////////////////////////////////////////////////
 /**********************************************************
-	¹¦ÄÜÃèÊö£º
-	
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º
-	ÏêÏ¸Éè¼Æ·½°¸ÎÄ¼ş±àºÅ£º
-	·ÂÕæÎÄ¼şÃû£º
-	
-	±àÖÆ£ºÖìÈÊ²ı
-	´´½¨ÈÕÆÚ£º 2019-6-28
-	°æ±¾£ºV1¡¢0
-	ĞŞ¸Ä¼ÇÂ¼£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½Òªï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Å£ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+
+	ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½Ê²ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ 2019-6-28
+	ï¿½æ±¾ï¿½ï¿½V1ï¿½ï¿½0
+	ï¿½Ş¸Ä¼ï¿½Â¼ï¿½ï¿½
 **********************************************************/
 
 module PRBS9ChkX4
@@ -499,43 +499,43 @@ module PRBS9ChkX4
 
  	//Define  Parameter
 	/////////////////////////////////////////////////////////
-	parameter		TCo_C   		= 1;    
-		
+	parameter		TCo_C   		= 1;
+
 	parameter RightCntWidth_C = 20;
-	
-	localparam	Alignment0 = 9'b1_000_100_00;	//1041£¬X9+X5+1
+
+	localparam	Alignment0 = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
 	localparam	Alignment1 = 9'b1_000_010_00;	//1021
 	localparam	Alignment2 = 9'b1_001_011_00; //1131
 	localparam	Alignment3 = 9'b1_100_110_00;	//1461
 //	localparam	Alignment4 = 9'b1_100_010_01;	//1423
-//	localparam	Alignment5 = 9'b1_000_101_10; //1055	    
+//	localparam	Alignment5 = 9'b1_000_101_10; //1055
 //	localparam	Alignment6 = 9'b1_001_110_11; //1167
 //	localparam	Alignment7 = 9'b1_101_100_00;	//1541
-	
+
 	/////////////////////////////////////////////////////////
-	
+
 	//Define Port
 	/////////////////////////////////////////////////////////
 	//System Signal
-	input 				SysClk;				//ÏµÍ³Ê±ÖÓ
-	input					Reset_N;			//ÏµÍ³¸´Î»
-	
+	input 				SysClk;				//ÏµÍ³Ê±ï¿½ï¿½
+	input					Reset_N;			//ÏµÍ³ï¿½ï¿½Î»
+
 	/////////////////////////////////////////////////////////
 	// Signal Define
 	input	[3:0]	DataIn  ;	//(I)Data Input
 	input				ClkEn   ;	//(I)Clock Enable
 	output 			Error   ;	//(O)Data Error
 	output 			Right		;	//(O)Data Right
-	
+
 	//1111111111111111111111111111111111111111111111111111111
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/ 
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	wire	[3:0]	RxError;
 	wire	[3:0]	RxRight;
-	
+
 	PRBS9Chk # (.Alignment			(Alignment0),
 							.RightCntWidth_C(RightCntWidth_C))
 	U0_PRBS9Chk
@@ -549,7 +549,7 @@ module PRBS9ChkX4
 		.Error 	(RxError[0]),	//(O)Data Error
 		.Right	(RxRight[0]) 	//(O)Data Right
 	);
-	
+
 	PRBS9Chk # (.Alignment			(Alignment1),
 							.RightCntWidth_C(RightCntWidth_C))
 	U1_PRBS9Chk
@@ -589,59 +589,59 @@ module PRBS9ChkX4
 		.Error 	(RxError[3]),	//(O)Data Error
 		.Right	(RxRight[3]) 	//(O)Data Right
 	);
-	
+
 	/***************************************************
-	Ä¿µÄ¸ÅÊö£º
-	¹¦ÄÜÃèÊö£º
-	***************************************************/    
+	Ä¿ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	***************************************************/
 	reg 	Error   ;	//(O)Data Error
 	reg 	Right		;	//(O)Data Right
-	
+
 	always @( posedge SysClk or negedge Reset_N)
 	begin
 		if (!Reset_N)
 		begin
-			Error   <= # TCo_C 1'h0;	
-			Right		<= # TCo_C 1'h0;		
+			Error   <= # TCo_C 1'h0;
+			Right		<= # TCo_C 1'h0;
 		end
 		else
 		begin
-			Error   <= # TCo_C |RxError;	
-			Right		<= # TCo_C &RxRight;		
+			Error   <= # TCo_C |RxError;
+			Right		<= # TCo_C &RxRight;
 		end
 	end
-				
+
 	//1111111111111111111111111111111111111111111111111111111
-	
-	
-	
+
+
+
 endmodule
-		                                                            
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            
-                                                                                                                                                                                   
-///////////////////////////////////////////////////////////  
-/**********************************************************  
-	¹¦ÄÜÃèÊö£º²úÉúÎ±Ëæ»úÂë                                                 
-	                                                           
-	ÊäÈëĞÅºÅ£º                                                 
-		1¡£ÏµÍ³ĞÅºÅ£ºSysClk, Reset_N                            
-		2¡£¶¨Ê±ĞÅºÅ£º                                  
-		3¡£Êı¾İÊäÈë£º                                  
-		4¡£¿ØÖÆÊäÈë£ºClkEn                             
-		5¡£ÅäÖÃĞÅÏ¢£º	                                          
-		6¡£ÆäËûÊäÈë£º                                          
-	Êä³öĞÅºÅ£º                                                   
-		1¡£Êı¾İÊä³ö£ºDataOut                                   
-		2¡£¿ØÖÆÊä³ö£º                            
-		3¡£×´Ì¬Êä³ö£º	                                             
-		4¡£ÆäËûÊä³ö£º                                            
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º	                                       
-**********************************************************/ 
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////
+/**********************************************************
+åŠŸèƒ½æè¿°ï¼šäº§ç”Ÿä¼ªéšæœºç 
+
+è¾“å…¥ä¿¡å·ï¼š
+  1ã€‚ç³»ç»Ÿä¿¡å·ï¼šSysClk, Reset_N
+  2ã€‚å®šæ—¶ä¿¡å·ï¼š
+  3ã€‚æ•°æ®è¾“å…¥ï¼š
+  4ã€‚æ§åˆ¶è¾“å…¥ï¼šClkEn
+  5ã€‚é…ç½®ä¿¡æ¯ï¼š
+  6ã€‚å…¶ä»–è¾“å…¥ï¼š
+è¾“å‡ºä¿¡å·ï¼š
+  1ã€‚æ•°æ®è¾“å‡ºï¼šDataOut
+  2ã€‚æ§åˆ¶è¾“å‡ºï¼š
+  3ã€‚çŠ¶æ€è¾“å‡ºï¼š
+  4ã€‚å…¶ä»–è¾“å‡ºï¼š
+é‡è¦è¾“å…¥ä¿¡å·è¦æ±‚ï¼š
+**********************************************************/
 module PRBS9Gen
 (
 	//System Signal
@@ -652,47 +652,47 @@ module PRBS9Gen
 	DataOut		//Data Output
 );
 
-	parameter  TCo_C = 1;                
-	parameter	 Alignment = 9'b1_000_100_00;	//1041£¬X9+X5+1
-	
+	parameter  TCo_C = 1;
+	parameter	 Alignment = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
+
 /*
 	parameter		Alignment = 9'b1_000_010_00;	//1021
 	parameter		Alignment = 9'b1_001_011_00; 	//1131
 	parameter		Alignment = 9'b1_100_110_00;	//1461
 	parameter		Alignment = 9'b1_100_010_01;	//1423
-	parameter		Alignment = 9'b1_000_101_10; 	//1055	    
+	parameter		Alignment = 9'b1_000_101_10; 	//1055
 	parameter		Alignment = 9'b1_001_110_11; 	//1167
 	parameter		Alignment = 9'b1_101_100_00;	//1541
 	parameter		Alignment = 9'b1_011_011_01; 	//1333
 	parameter		Alignment = 9'b1_110_000_10;	//1605
 	parameter		Alignment = 9'b1_010_011_00; 	//1231
 	parameter		Alignment = 9'b1_000_010_11; 	//1027
-*/	
+*/
 	input		  SysClk ;
 	input		  Reset_N;
-	input		  ClkEn  ;	
+	input		  ClkEn  ;
 	output		DataOut;
-	
+
 	reg	[8:0]	PRBSSft;
-	
+
   /***************************************************
-	ĞÅºÅÊäÈë£ºSysClk,Reset_N,ClkEn
-	ĞÅºÅÊä³ö£ºDataOut
-	Ä¿µÄ¸ÅÊö£º²úÉúËæ»úĞòÁĞ
-	¹¦ÄÜÃèÊö£º 
-	ÖØµã²âÊÔ£º	
-	***************************************************/   
+  ä¿¡å·è¾“å…¥ï¼šSysClk,Reset_N,ClkEn
+	ä¿¡å·è¾“å‡ºï¼šDataOut
+	ç›®çš„æ¦‚è¿°ï¼šäº§ç”Ÿéšæœºåºåˆ—
+	åŠŸèƒ½æè¿°ï¼š
+	é‡ç‚¹æµ‹è¯•ï¼š
+	***************************************************/
 	wire	[8:0]	PRBSAlignment;
-	wire    		PRBSIn       ;  
+	wire    		PRBSIn       ;
 	wire			  DataOut      ;
-	
+
 	assign  # TCo_C	PRBSAlignment = PRBSSft & Alignment;
 	assign  # TCo_C PRBSIn = 	PRBSAlignment[0] ^ PRBSAlignment[1]
-								^	PRBSAlignment[2] ^ PRBSAlignment[3]	 
-								^	PRBSAlignment[4] ^ PRBSAlignment[5]	
-								^	PRBSAlignment[6] ^ PRBSAlignment[7]	
-								^	PRBSAlignment[8];	
-	
+								^	PRBSAlignment[2] ^ PRBSAlignment[3]
+								^	PRBSAlignment[4] ^ PRBSAlignment[5]
+								^	PRBSAlignment[6] ^ PRBSAlignment[7]
+								^	PRBSAlignment[8];
+
 	always @ (posedge SysClk or negedge Reset_N)
 	begin
 		if ( ! Reset_N)
@@ -700,7 +700,7 @@ module PRBS9Gen
 			PRBSSft	<= # TCo_C 9'h0;
 		end
 		else if (ClkEn)
-		begin      
+		begin
 			if (|PRBSSft)
 			begin
 				PRBSSft[8]	<= # TCo_C PRBSSft[7];
@@ -711,94 +711,94 @@ module PRBS9Gen
 				PRBSSft[3]	<= # TCo_C PRBSSft[2];
 				PRBSSft[2]	<= # TCo_C PRBSSft[1];
 				PRBSSft[1]	<= # TCo_C PRBSSft[0];
-				PRBSSft[0]	<= # TCo_C PRBSIn ; 
+				PRBSSft[0]	<= # TCo_C PRBSIn ;
 			end
 			else
 			begin
 				PRBSSft	<= # TCo_C Alignment;
 			end
 		end
-	end	                          
-	
-	assign # TCo_C DataOut = PRBSSft[8];    
-	
+	end
+
+	assign # TCo_C DataOut = PRBSSft[8];
+
 endmodule
 
 
 
 
 
-                           
-///////////////////////////////////////////////////////////  
-/**********************************************************  
-	¹¦ÄÜÃèÊö£º¼ì²âÎ±Ëæ»úÂë                                                
-	                                                           
-	ÊäÈëĞÅºÅ£º                                                 
-		1¡£ÏµÍ³ĞÅºÅ£ºSysClk, Reset_N                            
-		2¡£¶¨Ê±ĞÅºÅ£º                                  
-		3¡£Êı¾İÊäÈë£ºDataIn                                  
-		4¡£¿ØÖÆÊäÈë£ºClkEn                             
-		5¡£ÅäÖÃĞÅÏ¢£º	                                          
-		6¡£ÆäËûÊäÈë£º                                          
-	Êä³öĞÅºÅ£º                                                   
-		1¡£Êı¾İÊä³ö£º                                   
-		2¡£¿ØÖÆÊä³ö£ºError,Right                           
-		3¡£×´Ì¬Êä³ö£º	                                             
-		4¡£ÆäËûÊä³ö£º                                            
-	ÖØÒªÊäÈëĞÅºÅÒªÇó£º	                                       
+
+///////////////////////////////////////////////////////////
+/**********************************************************
+åŠŸèƒ½æè¿°ï¼šæ£€æµ‹ä¼ªéšæœºç 
+
+è¾“å…¥ä¿¡å·ï¼š
+  1ã€‚ç³»ç»Ÿä¿¡å·ï¼šSysClk, Reset_N
+  2ã€‚å®šæ—¶ä¿¡å·ï¼š
+  3ã€‚æ•°æ®è¾“å…¥ï¼šDataIn
+  4ã€‚æ§åˆ¶è¾“å…¥ï¼šClkEn
+  5ã€‚é…ç½®ä¿¡æ¯ï¼š
+  6ã€‚å…¶ä»–è¾“å…¥ï¼š
+è¾“å‡ºä¿¡å·ï¼š
+  1ã€‚æ•°æ®è¾“å‡ºï¼š
+  2ã€‚æ§åˆ¶è¾“å‡ºï¼šError,Right
+  3ã€‚çŠ¶æ€è¾“å‡ºï¼š
+  4ã€‚å…¶ä»–è¾“å‡ºï¼š
+é‡è¦è¾“å…¥ä¿¡å·è¦æ±‚ï¼š
 **********************************************************/
 
 module PRBS9Chk
 (
 	//System Signal
 	SysClk  ,
-	Reset_N ,	
+	Reset_N ,
 	//Signal
 	DataIn  ,
-	ClkEn   ,	
+	ClkEn   ,
 	Error    ,
 	Right
 );
 
-	parameter	 	TCo_C = 1;    
-	         
+	parameter	 	TCo_C = 1;
+
 	parameter RightCntWidth_C = 20;
-	
+
 	localparam 	RCW_C = RightCntWidth_C;
-	
-	parameter		Alignment = 9'b1_000_100_00;	//1041£¬X9+X5+1
-	
+
+	parameter		Alignment = 9'b1_000_100_00;	//1041ï¿½ï¿½X9+X5+1
+
 /*parameter		Alignment = 9'b1_000_010_00;	//1021
 	parameter		Alignment = 9'b1_001_011_00; 	//1131
 	parameter		Alignment = 9'b1_100_110_00;	//1461
 	parameter		Alignment = 9'b1_100_010_01;	//1423
-	parameter		Alignment = 9'b1_000_101_10; 	//1055	    
+	parameter		Alignment = 9'b1_000_101_10; 	//1055
 	parameter		Alignment = 9'b1_001_110_11; 	//1167
 	parameter		Alignment = 9'b1_101_100_00;	//1541
 	parameter		Alignment = 9'b1_011_011_01; 	//1333
 	parameter		Alignment = 9'b1_110_000_10;	//1605
 	parameter		Alignment = 9'b1_010_011_00; 	//1231
-	parameter		Alignment = 9'b1_000_010_11; 	//1027  
-*/	
-	
+	parameter		Alignment = 9'b1_000_010_11; 	//1027
+*/
+
 	input		SysClk	;
 	input		Reset_N	;
-	
+
 	input		DataIn;
 	input		ClkEn	;
-	
-	output	Error	;    
+
+	output	Error	;
 	output	Right	;
-		
+
 	/***************************************************
-	ĞÅºÅÊäÈë£º	SysClk,Reset_N,ClkEn
-	ĞÅºÅÊä³ö£º	DataShift[8:0]
-	Ä¿µÄ¸ÅÊö£º	¶ÔÊäÈëµÄÊı¾İ½øĞĞ´®²¢×ª»»
-	¹¦ÄÜÃèÊö£º
-	ÖØµã²âÊÔ£º	
-	***************************************************/   
-	reg	[8:0]	DataShift;                              
-	
+  ä¿¡å·è¾“å…¥ï¼š	SysClk,Reset_N,ClkEn
+	ä¿¡å·è¾“å‡ºï¼š	DataShift[8:0]
+	ç›®çš„æ¦‚è¿°ï¼š	å¯¹è¾“å…¥çš„æ•°æ®è¿›è¡Œä¸²å¹¶è½¬æ¢
+	åŠŸèƒ½æè¿°ï¼š
+	é‡ç‚¹æµ‹è¯•ï¼š
+	***************************************************/
+	reg	[8:0]	DataShift;
+
 	always @ (posedge SysClk or negedge Reset_N)
 	begin
 		if ( ! Reset_N)
@@ -817,26 +817,26 @@ module PRBS9Chk
 			DataShift[1]	<= # TCo_C DataShift[0];
 			DataShift[0]	<= # TCo_C DataIn;
 		end
-	end	
-			
+	end
+
 	/***************************************************
-	ĞÅºÅÊäÈë£º	SysClk,Reset_N,ClkEn,DataShift
-	ĞÅºÅÊä³ö£º	PRBSShift[8:0]
-	Ä¿µÄ¸ÅÊö£º	²úÉúÒ»¸öÓëÊäÈëĞÅºÅÍ¬²½µÄÎ±Ëæ»úÂë
-	¹¦ÄÜÃèÊö£º
-	ÖØµã²âÊÔ£º	
-	***************************************************/   
-	wire	[8:0]	PRBSAlignment;     
+  ä¿¡å·è¾“å…¥ï¼š	SysClk,Reset_N,ClkEn,DataShift
+	ä¿¡å·è¾“å‡ºï¼š	PRBSShift[8:0]
+	ç›®çš„æ¦‚è¿°ï¼š	äº§ç”Ÿä¸€ä¸ªä¸è¾“å…¥ä¿¡å·åŒæ­¥çš„ä¼ªéšæœºç 
+	åŠŸèƒ½æè¿°ï¼š
+	é‡ç‚¹æµ‹è¯•ï¼š
+	***************************************************/
+	wire	[8:0]	PRBSAlignment;
 	reg		[8:0]	PRBSShift;
-	wire    		PRBSIn;  
-	
+	wire    		PRBSIn;
+
 	assign  # TCo_C	PRBSAlignment = PRBSShift & Alignment;
 	assign  # TCo_C PRBSIn = 	PRBSAlignment[0] ^ PRBSAlignment[1]
-													^	PRBSAlignment[2] ^ PRBSAlignment[3]	 
-													^	PRBSAlignment[4] ^ PRBSAlignment[5]	
-													^	PRBSAlignment[6] ^ PRBSAlignment[7]	
-													^	PRBSAlignment[8];	
-								
+													^	PRBSAlignment[2] ^ PRBSAlignment[3]
+													^	PRBSAlignment[4] ^ PRBSAlignment[5]
+													^	PRBSAlignment[6] ^ PRBSAlignment[7]
+													^	PRBSAlignment[8];
+
 	always @ (posedge SysClk or negedge Reset_N)
 	begin
 		if ( ! Reset_N)
@@ -852,7 +852,7 @@ module PRBS9Chk
 					PRBSShift[8:1]	<= # TCo_C DataShift[7:0];
 					PRBSShift[0]		<=	# TCo_C DataIn;
 				end
-				else if (|PRBSShift)  
+				else if (|PRBSShift)
 				begin
 					PRBSShift[8]	<= # TCo_C PRBSShift[7];
 					PRBSShift[7]	<= # TCo_C PRBSShift[6];
@@ -862,41 +862,41 @@ module PRBS9Chk
 					PRBSShift[3]	<= # TCo_C PRBSShift[2];
 					PRBSShift[2]	<= # TCo_C PRBSShift[1];
 					PRBSShift[1]	<= # TCo_C PRBSShift[0];
-					PRBSShift[0]	<= # TCo_C PRBSIn ;  	  
+					PRBSShift[0]	<= # TCo_C PRBSIn ;
 				end
 				else
-				begin      
-					PRBSShift	<= # TCo_C Alignment;	
+				begin
+					PRBSShift	<= # TCo_C Alignment;
 				end
 			end
 		end
-	end		
-	
+	end
+
 	/***************************************************
-	ĞÅºÅÊäÈë£º	SysClk,Reset_N,ClkEn,DataShift,PRBSShift[8:0]
-	ĞÅºÅÊä³ö£º	Error
-	Ä¿µÄ¸ÅÊö£º	²úÉú¼ì²â½á¹û
-	¹¦ÄÜÃèÊö£º	µ±Êı¾İÊäÈëµÄ´®²¢×ª»»µÄ½á¹ûºÍÎ±Ëæ»úÂë²úÉúÆ÷²»Í¬Ê±£¬Êä³öErrĞÅºÅ
-	ÖØµã²âÊÔ£º	
-	***************************************************/ 
-	reg			Error;   
-	
+  ä¿¡å·è¾“å…¥ï¼š	SysClk,Reset_N,ClkEn,DataShift,PRBSShift[8:0]
+	ä¿¡å·è¾“å‡ºï¼š	Error
+	ç›®çš„æ¦‚è¿°ï¼š	äº§ç”Ÿæ£€æµ‹ç»“æœ
+	åŠŸèƒ½æè¿°ï¼š	å½“æ•°æ®è¾“å…¥çš„ä¸²å¹¶è½¬æ¢çš„ç»“æœå’Œä¼ªéšæœºç äº§ç”Ÿå™¨ä¸åŒæ—¶ï¼Œè¾“å‡ºErrä¿¡å·
+	é‡ç‚¹æµ‹è¯•ï¼š
+	***************************************************/
+	reg			Error;
+
 	always @ (posedge SysClk or negedge Reset_N)
 	begin
-		if ( ! Reset_N)		Error	<= # TCo_C 1'h1;   
-		else							Error <= # TCo_C  DataShift != PRBSShift;   
-	end      
-	
+		if ( ! Reset_N)		Error	<= # TCo_C 1'h1;
+		else							Error <= # TCo_C  DataShift != PRBSShift;
+	end
+
   /***************************************************
-	ĞÅºÅÊäÈë£º	SysClk,Reset_N,ClkEn,Error
-	ĞÅºÅÊä³ö£º	RightCnt
-	Ä¿µÄ¸ÅÊö£º	²úÉú¼ì²â½á¹û
-	¹¦ÄÜÃèÊö£º	
-	ÖØµã²âÊÔ£º	
-	***************************************************/	
-	reg	 [RCW_C-1:0]	RightCnt;  
+  ä¿¡å·è¾“å…¥ï¼š	SysClk,Reset_N,ClkEn,Error
+	ä¿¡å·è¾“å‡ºï¼š	RightCnt
+	ç›®çš„æ¦‚è¿°ï¼š	äº§ç”Ÿæ£€æµ‹ç»“æœ
+	åŠŸèƒ½æè¿°ï¼š
+	é‡ç‚¹æµ‹è¯•ï¼š	
+	***************************************************/
+	reg	 [RCW_C-1:0]	RightCnt;
 	reg	 Right;
-		
+
 	always @ (posedge SysClk or negedge Reset_N)
 	begin
 		if ( ! Reset_N)
@@ -905,12 +905,12 @@ module PRBS9Chk
 			Right			<= # TCo_C 	1'h0;
 		end
 		else	if (ClkEn)
-		begin   
+		begin
 			if (Error)						RightCnt <= # TCo_C {RCW_C{1'h0}};
 			else if (~&RightCnt)	RightCnt <= # TCo_C RightCnt + 	{{RCW_C-1{1'h0}},1'h1};
-			
+
 			Right			<= # TCo_C 	& RightCnt;
 		end
-	end      
-	
+	end
+
 endmodule
