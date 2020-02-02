@@ -112,7 +112,7 @@ On Ubuntu 16LTS : Efinix provide the Free FPGA develop suit, you need register i
 Other features :
 
 - Efinity Version Number：2019.3.272.1.6
-- Test the project on Windows and Ubuntu16 envirement both
+- Test the project on Windows and Ubuntu16 environment both
 
 ## Hardware  
 
