@@ -132,6 +132,11 @@ Other features :
 ![T20F256EVB Product Picture](./T20F256EVB_PCB.jpg)
 
 
+## ManchesterIP LVDS Rx and Tx 连接以及LED指示灯的位置
+
+![LVDS line and LED blinking](./LVDS_line_LED.jpg)
+
+
 ## Project name
 
 
