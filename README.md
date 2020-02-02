@@ -6,6 +6,10 @@
 
 > 在工业控制的领域， PLC， Servo接口， 多模块链接， 都要求数字输入输出模块之间需要有快速可靠抗干扰性强的链接方案， EtherCAT的模块之间链接也是采用这种方式，
 
+1、满足**GB/T31230.2**和**IEC61158**的标准要求；（附件是GB/T31230.2）  
+2、和**倍福的EBus**能实现对接；
+
+
 > **Efinix的ManchesterIP将过去EtherCAT的应用中的数字链路有效提高到100M信号带宽， 可以使中国国产的PLC如果使用该链路， 实时响应的带宽将与日本基恩士公司的高速模块之间的接口有同样速度的响应速度**
 
 
@@ -80,8 +84,22 @@ EFX_RAM_5K      : 	3
 EFX_GBUFCE      : 	3
 ```
 
+V1.2优化后的最终结果是：
+```
+---------- Resource Summary (begin) ----------
+Inputs:             	17 / 470 (3.62%)
+Outputs:            	18 / 595 (3.03%)
+Clocks:                 3 / 16 (18.75%)
+Logic Elements:     472 / 19728 (2.39%)
+LE: LUTs/Adders:  329 / 19728 (1.67%)
+LE: Registers:    296 / 13920 (2.13%)
+Memory Blocks:      3 / 204 (1.47%)
+Multipliers:        0 / 36 (0.00%)
+---------- Resource Summary (end) ----------
+```
 
-This repo focus on introduction Efinix Trion Series FPGA Block RAM and PLL
+This repo focus on introduction Efinix Trion Series FPGA IP support Manchester and EtherCAT Ebus
+
 - README.md  the project readme file
 - Efinix 的官网是 www.efinixinc.com
 
@@ -177,12 +195,18 @@ Efinity的工程文件在 Mcst2MIIDebug
 - 性能评测
 - IP参数配置
 
+## 工业以太网现场总线EtherCAT 第2部分：物理层服务和协议规范( GB T 31230.2-2014)
+
+- GB_EtherCAT.pdf
+
 ## Update
 
 - Feb-1-2020,  migrate from 2019.2 to 2019.3, certified
 
  Tester by Ben Chen in Windows
  Tester by Wisdom Zhang in Ubuntu16
+
+
 
 
 ## Acknowledge
