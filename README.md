@@ -118,9 +118,33 @@ Efinix FPGA 的第一个低成本FPGA家族是 Trion :
  - EVB        :
    - T8EVB with build in programmer, you only need PC with USB
    - T20EVB with build in programmer based on FTDI chip, you only need PC with USB
+
+
 -
 ```
 
+## T20 FPGA summary
+
+Features  
+
+- High-density, low-power Quantum TM architecture Built on SMIC 40 nm process  
+- Low core leakage current (6.7 mA typical)  
+- FPGA interface blocks  
+```
+— 20K Logic cells
+— GPIO
+— PLL
+— LVDS 800 Mbps per lane with up to 20 TX pairs and 26 RX pairs
+
+HardIPs
+
+— MIPI DPHY with CSI-2 controller hard IP, 1.5 Gbps per lane  
+— DDR3, LPDDR3, LPDDR2 x16 PHY with memory controller hard IP, 12.8 Gbps
+aggregate bandwidth
+
+
+
+```
 ## Software
 
 On Ubuntu 16LTS : Efinix provide the Free FPGA develop suit, you need register it and buy one piece of EVB
@@ -132,7 +156,7 @@ Other features :
 - Efinity Version Number：2019.3.272.1.6
 - Test the project on Windows and Ubuntu16 environment both
 
-## Hardware  
+## Hardware for EVB
 
 - 项目使用T20F256EVB作为测试硬件环境，其中LVDS的收发端子以及LED作为PHY和状态运行显示
 
