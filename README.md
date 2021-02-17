@@ -42,7 +42,7 @@ update in
 - 从一级到下一级的整个传输到译码时间**低于250ns**,性能比当前工业控制的10M信号1-2us的时间**提高6倍以上**
 
 
-> **Efinix的ManchesterIP将过去EtherCAT的应用中的数字链路有效提高到100M信号带宽， 可以使中国国产的PLC如果使用该链路， 实时响应的带宽将与日本基恩士公司的高速模块之间的接口有同样速度的响应速度**
+> **易灵思公司的ManchesterIP将过去EtherCAT的应用中的数字链路有效提高到100M信号带宽， 可以使中国国产的PLC如果使用该链路， 实时响应的带宽得到极大的提高，在响应速度上将与日本基恩士公司的高速模块之间的接口相当**
 
 
 你可以通过这个项目， 来快速了解如何使用Efinix FPGA的LVDS， PLL，以及伪随机编码构建一个Manchester 接口的PHY
@@ -134,9 +134,9 @@ Multipliers:        0 / 36 (0.00%)
 This repo focus on introduction Efinix Trion Series FPGA IP support Manchester and EtherCAT Ebus
 
 - README.md  the project readme file
-- Efinix 的官网是 www.efinixinc.com
+- 易灵思的官网是 www.efinixchina.com
 
-Efinix FPGA 的第一个低成本FPGA家族是 Trion :
+易灵思FPGA 的第一个低成本FPGA家族是 Trion :
 - you can register to access the documentation
 - we will provide the EVB and software for your evaluation.
 - ...
@@ -180,7 +180,7 @@ aggregate bandwidth
 ```
 ## Software
 
-On Ubuntu 16LTS : Efinix provide the Free FPGA develop suit, you need register it and buy one piece of EVB
+On Ubuntu 16LTS : 易灵思提供免费的开发软件
 
 ```sh
 ```
